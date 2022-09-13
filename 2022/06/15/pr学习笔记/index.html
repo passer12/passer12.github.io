@@ -1,0 +1,720 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="兴趣使然">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="pr学习笔记第一天 1.新建项目软件的基础打开 2.新建序列新建序列的两种方式，ctrl+n，两种主要的预设n制和P制，关于帧、像素、场序等的一些了解，可以自定义一个预设。 3.了解pr工作区先是从布局上大致介绍了pr界面。然后详细介绍了编辑界面以及一些小的界面。包括源界面、工作区、节目区、时间轴等。 4.如何导入素材两种方法，仍然是工作区，和菜单栏两个位置。要注意的就是导入的文件格式，可以是图片">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pr学习笔记">
+<meta property="og:url" content="http://interestcausesthis.com/2022/06/15/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="兴趣使然">
+<meta property="og:description" content="pr学习笔记第一天 1.新建项目软件的基础打开 2.新建序列新建序列的两种方式，ctrl+n，两种主要的预设n制和P制，关于帧、像素、场序等的一些了解，可以自定义一个预设。 3.了解pr工作区先是从布局上大致介绍了pr界面。然后详细介绍了编辑界面以及一些小的界面。包括源界面、工作区、节目区、时间轴等。 4.如何导入素材两种方法，仍然是工作区，和菜单栏两个位置。要注意的就是导入的文件格式，可以是图片">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://interestcausesthis.com/img/wall1.jpg">
+<meta property="article:published_time" content="2022-06-15T00:33:08.000Z">
+<meta property="article:modified_time" content="2022-06-15T08:34:41.926Z">
+<meta property="article:author" content="兴趣使然">
+<meta property="article:tag" content="暑假计划">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://interestcausesthis.com/img/wall1.jpg">
+  
+  
+  
+  <title>pr学习笔记 - 兴趣使然</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"interestcausesthis.com","root":"/","version":"1.9.1","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>兴趣使然</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="pr学习笔记"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-06-15 08:33" pubdate>
+          2022年6月15日 早上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.5k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          30 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">pr学习笔记</h1>
+            
+            <div class="markdown-body">
+              
+              <h1 id="pr学习笔记"><a href="#pr学习笔记" class="headerlink" title="pr学习笔记"></a>pr学习笔记</h1><p>第一天</p>
+<h2 id="1-新建项目"><a href="#1-新建项目" class="headerlink" title="1.新建项目"></a>1.新建项目</h2><p>软件的基础打开</p>
+<h2 id="2-新建序列"><a href="#2-新建序列" class="headerlink" title="2.新建序列"></a>2.新建序列</h2><p>新建序列的两种方式，ctrl+n，两种主要的预设n制和P制，关于帧、像素、场序等的一些了解，可以自定义一个预设。</p>
+<h2 id="3-了解pr工作区"><a href="#3-了解pr工作区" class="headerlink" title="3.了解pr工作区"></a>3.了解pr工作区</h2><p>先是从布局上大致介绍了pr界面。然后详细介绍了编辑界面以及一些小的界面。包括源界面、工作区、节目区、时间轴等。</p>
+<h2 id="4-如何导入素材"><a href="#4-如何导入素材" class="headerlink" title="4.如何导入素材"></a>4.如何导入素材</h2><p>两种方法，仍然是工作区，和菜单栏两个位置。要注意的就是导入的文件格式，可以是图片、视频、音频、工程文件等等。</p>
+<h2 id="5-视图的切换"><a href="#5-视图的切换" class="headerlink" title="5.视图的切换"></a>5.视图的切换</h2><p>首先可在工作区新建一些素材包，实际上就是一些装着不同类型素材的文件夹。可通过~键将工作区放大或者双击工作区顶部切换浮窗的地方。关于那些素材包的视图可通过左下角的按钮切换。分别为列表视图和图标视图。列表视图可以直接在一个窗口总览素材的属性，图标视图则必须点进去才能看到素材，但是更详细。</p>
+<h2 id="6-时间轴初始"><a href="#6-时间轴初始" class="headerlink" title="6.时间轴初始"></a>6.时间轴初始</h2><p>首先是把素材拖进时间轴。时间轴又分为视频轨道和音频轨道，视频轨道为v，音频为A,这里还有一些对轨道的细节操作。比如添加轨道，分为主动和被动两种。轨道前面的锁定与可见与否按钮的介绍。轨道左侧上方还有5个按钮，分别有不同的作用，较为重要，以后会经常用。轨道可进行上下放大，显示更详细的信息。</p>
+<h2 id="7-如何拖拽素材"><a href="#7-如何拖拽素材" class="headerlink" title="7.如何拖拽素材"></a>7.如何拖拽素材</h2><p>在工作区双击素材然后在源界面查看，用入点和出点选择希望使用的一段，直接在特定按钮处按下左键进行拖拽可只拖拽视频或者音频。而直接从视频图画上进行拖拽可同时拖拽。但是要注意时间轴上可选择轨道，如果没有同时选中两种，则将只能拖拽一种。</p>
+<h2 id="8-取消视频音频链接"><a href="#8-取消视频音频链接" class="headerlink" title="8.取消视频音频链接"></a>8.取消视频音频链接</h2><p>ctrl+l或者直接右键选项可以开关视频音频链接。视频音频链接的时候视频的后面有个V，音频后面有个A，正常情况下是两个会一起被操作。但若是关闭了时间轴左上角的链接选择项，则可以单独操作一个，但实际上二者还是链接在一块连着的。</p>
+<h2 id="9-标记入点及出点"><a href="#9-标记入点及出点" class="headerlink" title="9.标记入点及出点"></a>9.标记入点及出点</h2><p>出入点在源界面可以选择特定的视频片段，在工作区也可以选择特定的片段进行渲染或导出。添加的效果未渲染时是红色，渲染后变绿色，渲染快捷键是回车。取消的话可以鼠标右键。</p>
+<p>第二天</p>
+<h2 id="10-标记点"><a href="#10-标记点" class="headerlink" title="10.标记点"></a>10.标记点</h2><p>原窗口的标记点是直接打在素材上的，而时间轴和节目轴的标记点则是打在时间轴上，快捷键m。 可编辑标记点的内容，包括名称注释颜色，可对颜色分类代表不同功能。右键更多操作，包括清除。</p>
+<h2 id="11-时间码"><a href="#11-时间码" class="headerlink" title="11.时间码"></a>11.时间码</h2><p>源窗口，节目窗口，时间轴的左边都有蓝色的时间码，代表当前位置。最大为小时，最小为帧。念法忽略前导0。可分别对不同单位进行修改跳转时间，也可直接输入数字，默认从最低位开始，自动补齐前导0。如输入超过最大数，自动进位。</p>
+<h2 id="12-速度与持续时间"><a href="#12-速度与持续时间" class="headerlink" title="12.速度与持续时间"></a>12.速度与持续时间</h2><p>鼠标右键点击可调整速度与持续时间，也可实现倒放，若持续时间与另一段视频重合，则被覆盖。一般速度和持续时间有一个正比的关联关系，可通过开关进行调整。 还可以使用比率拉伸工具，调整时间的同时正比速度调整。</p>
+<h2 id="13-重命名"><a href="#13-重命名" class="headerlink" title="13.重命名"></a>13.重命名</h2><p>对于项目窗口和时间轴窗口的素材均可通过右键找到重命名或者选中后在菜单栏的剪辑处找到重命名。项目窗口中的还可以双击名称重命名。序列可进行更改设置，选中序列，然后在菜单栏中序列的序列设置就可以更改设置了。</p>
+<h2 id="14-新建项"><a href="#14-新建项" class="headerlink" title="14.新建项"></a>14.新建项</h2><p>项目窗口可进行新建项，包括：序列、项目快捷方式、暂时占位可被替换的脱机文件、透明可以用来调色或者添加效果的调整图层（尽量不要直接在原视频进行调色）、暂停思绪的彩条、黑场视频、字幕、不透明的颜色遮罩、可自定义的通用倒计时片头、类似调整图层的透明视频。</p>
+<h2 id="15-效果控件"><a href="#15-效果控件" class="headerlink" title="15.效果控件"></a>15.效果控件</h2><p>位于源窗口的效果控件可直接调整所选视频的效果，包括各种内容。最初只有基础效果，可通过从工作区拖拽效果进入原窗口添加效果。类似于ae，可为之添加关键帧，打开效果前面的三角号，可对变化速度进行调节。还可以框住关键帧，设置缓入缓出贝塞尔曲线等效果设置。贝塞尔曲线就是软件中用钢笔绘图作的线。</p>
+<h2 id="16-上下黑白边"><a href="#16-上下黑白边" class="headerlink" title="16.上下黑白边"></a>16.上下黑白边</h2><p>文件新建中的旧版标题，虽说是旧版标题却写着字幕，翻译问题？新建后从原窗口拖拽至时间轴即可。还可通过直接在节目窗口进行操作添加，从时间轴的钢笔工具处可找出画矩形的工具，直接在节目窗口绘画即可。可通过点击加号添加安全边距等小按钮，方便操作。</p>
+<h2 id="17-打包工程"><a href="#17-打包工程" class="headerlink" title="17.打包工程"></a>17.打包工程</h2><p>当要更换设备时，为了继续之前的操作需要将工程文件打包移动。点击菜单栏文件中的项目管理即可对工程文件打包，然后复制到待用位置。但是pr软件对素材的链接位置说固定的，这样做可能会产生脱机文件。</p>
+<h2 id="18-脱机文件"><a href="#18-脱机文件" class="headerlink" title="18.脱机文件"></a>18.脱机文件</h2><p>当导入工程或者模板时，素材的位置可能已经发生了移动，这时可以在进入提醒的界面进行查找，也可以在时间轴的脱机文件上右键选择链接媒体，然后查找素材（以文件名和扩展名匹配），即可改变脱机。脱机文件可用于当一段素材不需要剪辑或者需要更换时，为了节省电脑内存，右键将其设为脱机文件。</p>
+<h2 id="19-删除素材及序列"><a href="#19-删除素材及序列" class="headerlink" title="19.删除素材及序列"></a>19.删除素材及序列</h2><p>项目窗口的文件删除，只是移除。delete键，右键清除，垃圾桶三种。时间轴上的也能delete和右键，但是只是从序列中删除，项目窗口仍有，也可以删除空白处，成为波纹删除。序列也可从时间轴移除，点击左边叉号或横杠中的关闭面板。</p>
+<h2 id="20-设置标识帧"><a href="#20-设置标识帧" class="headerlink" title="20.设置标识帧"></a>20.设置标识帧</h2><p>在项目窗口的图标视图浏览视频素材时，封面往往是视频的第一帧，可通过直接在素材上拖动下方游标预览，当拖动到某一帧时右键设置为标识帧即可将封面呈现为此。有利于辨别视频内容。</p>
+<h2 id="21-关键帧"><a href="#21-关键帧" class="headerlink" title="21.关键帧"></a>21.关键帧</h2><p>可通过效果控件处的属性直接打关键帧。也可在时间轴的素材上直接进行。将素材变宽可以看到一条白线，一般情况视频是不透明度，音频是音量，可通过钢笔打点设置关键帧，拖动点上下左右位置来实现属性的改变，一般是线性变化。也可以右键贝塞尔曲线，和效果控件处基本一致。</p>
+<h2 id="22-效果栏"><a href="#22-效果栏" class="headerlink" title="22.效果栏"></a>22.效果栏</h2><p>从项目窗口可以选择效果。基础的话包括音视频效果以及过渡和预设。可以自己创造一些效果或者从外部导入放置到窗口中，然后调整各种参数。效果太多了，全部记住不太现实，有些仅需稍微了解，可通过在顶部搜索栏中直接搜索名称达到对应效果。应该在各种案例中不断熟悉对效果的使用。</p>
+<h2 id="23-字幕工具初始"><a href="#23-字幕工具初始" class="headerlink" title="23.字幕工具初始"></a>23.字幕工具初始</h2><p>可以通过文件中的旧版标题设置字幕，也可以通过工具栏的文本直接设置。</p>
+<h2 id="24-导出设置"><a href="#24-导出设置" class="headerlink" title="24.导出设置"></a>24.导出设置</h2><p>可通过快捷键CTRL+m或者菜单栏文件中导出。导出的设置中，AVI代表基本不压缩的最高画质，h.264(mp4)画质降低，mov(quicktime),FLV画质最低。导出窗口下面还可进行更加详细的设置。</p>
+<h2 id="25-无名之辈电影开头"><a href="#25-无名之辈电影开头" class="headerlink" title="25.无名之辈电影开头"></a>25.无名之辈电影开头</h2><p>无名之辈的电影开头是一个人在狭窄的走廊中追赶另一个人。然后随着音乐，视角上下压缩逐渐变窄，然后在屏幕上方被压缩的视角黑框处出现透明的大字，大字中有视频在播放。简单还原，直接设置裁剪两个关键帧就可以形成压缩，然后在最后面添加一个旧版标题添加字母。接着就可以拿出要在透明字中显示的视频，不过要把这个视频放在字幕和原视频之间，然后再找到轨道遮罩效果，点击遮罩选择字幕所在的视频图层，即可完成。之后如果要设置转场效果的话一定要将视频和字幕嵌套在一起否则轨道遮罩会失效。</p>
+<h2 id="26-文字溶解"><a href="#26-文字溶解" class="headerlink" title="26.文字溶解"></a>26.文字溶解</h2><p>首先设置一个旧版标题的字幕。主要就是用到了粗糙边缘的效果，这个效果中的边框参数从高到低就是字体从模糊溶解到清晰的过程。</p>
+<h2 id="27-快闪字幕"><a href="#27-快闪字幕" class="headerlink" title="27.快闪字幕"></a>27.快闪字幕</h2><p>大概是我的问题，我只觉得很尬是怎么回事？这个案例要用到ps所以暂时先放着，以后再重复。</p>
+<h2 id="28-偷影子教程"><a href="#28-偷影子教程" class="headerlink" title="28.偷影子教程"></a>28.偷影子教程</h2><p>一个泡着一株花的水杯静止不懂，影子中一只手拿走了杯子上的花。实际上是蒙版的一个介绍。首先复制两份视频，将上层的视频开头设置帧定格，然后用不透明度中的钢笔工具再上层画一个形状就行了，接下来这部分会始终保持不动，其他部分则呈现下层视频。轨道遮罩分为alpha遮罩和亮度遮罩，可设置反向。前者以有信息处透明，后者有亮度处透明，且成线性。</p>
+<h2 id="29-调色"><a href="#29-调色" class="headerlink" title="29.调色"></a>29.调色</h2><p>没看懂。感觉就是自己做了个滤镜。</p>
+<p>第三天</p>
+<h2 id="30-建筑物生长案例"><a href="#30-建筑物生长案例" class="headerlink" title="30.建筑物生长案例"></a>30.建筑物生长案例</h2><p>似乎越往下的案列越要依赖ps，也许有必要再去学习下ps，不过这次给好了素材和图，直接就拿来使用了。</p>
+<p>首先将视频放入序列中，选定合适的位置进行建筑物生长。然后就可以在这里放置扣下来的图片了，然后给这个图片添加一个变换效果并设置两个关键帧就行了。可以设置细节比如快门角度调为360使之模糊。</p>
+<h2 id="32-卡点教程"><a href="#32-卡点教程" class="headerlink" title="32.卡点教程"></a>32.卡点教程</h2><p>首先找一段有鼓点的音乐，可以使用某些插件自动打点，也可以看音频的那个波图打点，也可以听音乐手动打点。然后再素材区选择自己要播放图片，全选后自动匹配序列，然后基本就成了。可以自己做一个转场效果，比如抖动模糊类的，之后全选保存预设就可以有一个自己的转场效果并且勾选多个素材一键使用。</p>
+<h2 id="33-变速效果"><a href="#33-变速效果" class="headerlink" title="33.变速效果"></a>33.变速效果</h2><p>这玩意应该不用讲吧，跳过了。</p>
+<h2 id="34-变声效果"><a href="#34-变声效果" class="headerlink" title="34.变声效果"></a>34.变声效果</h2><p>就是介绍一个效果音高转换器。</p>
+<h2 id="35-分屏效果"><a href="#35-分屏效果" class="headerlink" title="35.分屏效果"></a>35.分屏效果</h2><p>可以利用一个效果叫做线性擦除，也可以利用裁剪很快达到。</p>
+<h2 id="36查找边缘"><a href="#36查找边缘" class="headerlink" title="36查找边缘"></a>36查找边缘</h2><p>就是利用了一个叫做查找边缘的效果。</p>
+<p>至此，pr基础篇结束。暂停学习，接下来将先将期末作业各种东西完成。pr学习到此为止。</p>
+
+              
+            </div>
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%9A%91%E5%81%87%E8%AE%A1%E5%88%92/">#暑假计划</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>pr学习笔记</div>
+      <div>http://interestcausesthis.com/2022/06/15/pr学习笔记/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>兴趣使然</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年6月15日</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>许可协议</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/07/18/pixel%20logic%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" title="pixel logic阅读笔记">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">pixel logic阅读笔记</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/06/11/%E4%BA%BA%E4%BB%AC%E6%80%BB%E6%98%AF%E6%97%A0%E7%97%9B%E5%91%BB%E5%90%9F/" title="人们总是喜新厌旧">
+                        <span class="hidden-mobile">人们总是喜新厌旧</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#gitalk-container', function() {
+      Fluid.utils.createCssLink('/css/gitalk.css')
+      Fluid.utils.createScript('https://lib.baomitu.com/gitalk/1.7.2/gitalk.min.js', function() {
+        var options = Object.assign(
+          {"clientID":"91810b85c3e155c3b463","clientSecret":"c068ec1f588a0c185794e5539c34ca78f2689d80","repo":"blogcomment","owner":"passer12","admin":["passer12"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
+          {
+            id: 'a003656741401ff686bacded092b83fb'
+          }
+        )
+        var gitalk = new Gitalk(options);
+        gitalk.render('gitalk-container');
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script>
+  (function() {
+    var enableLang = CONFIG.code_language.enable && CONFIG.code_language.default;
+    var enableCopy = CONFIG.copy_btn;
+    if (!enableLang && !enableCopy) {
+      return;
+    }
+
+    function getBgClass(ele) {
+      return Fluid.utils.getBackgroundLightness(ele) >= 0 ? 'code-widget-light' : 'code-widget-dark';
+    }
+
+    var copyTmpl = '';
+    copyTmpl += '<div class="code-widget">';
+    copyTmpl += 'LANG';
+    copyTmpl += '</div>';
+    jQuery('.markdown-body pre').each(function() {
+      var $pre = jQuery(this);
+      if ($pre.find('code.mermaid').length > 0) {
+        return;
+      }
+      if ($pre.find('span.line').length > 0) {
+        return;
+      }
+
+      var lang = '';
+
+      if (enableLang) {
+        lang = CONFIG.code_language.default;
+        if ($pre[0].children.length > 0 && $pre[0].children[0].classList.length >= 2 && $pre.children().hasClass('hljs')) {
+          lang = $pre[0].children[0].classList[1];
+        } else if ($pre[0].getAttribute('data-language')) {
+          lang = $pre[0].getAttribute('data-language');
+        } else if ($pre.parent().hasClass('sourceCode') && $pre[0].children.length > 0 && $pre[0].children[0].classList.length >= 2) {
+          lang = $pre[0].children[0].classList[1];
+          $pre.parent().addClass('code-wrapper');
+        } else if ($pre.parent().hasClass('markdown-body') && $pre[0].classList.length === 0) {
+          $pre.wrap('<div class="code-wrapper"></div>');
+        }
+        lang = lang.toUpperCase().replace('NONE', CONFIG.code_language.default);
+      }
+      $pre.append(copyTmpl.replace('LANG', lang).replace('code-widget">',
+        getBgClass($pre[0]) + (enableCopy ? ' code-widget copy-btn" data-clipboard-snippet><i class="iconfont icon-copy"></i>' : ' code-widget">')));
+
+      if (enableCopy) {
+        Fluid.utils.createScript('https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js', function() {
+          var clipboard = new window.ClipboardJS('.copy-btn', {
+            target: function(trigger) {
+              var nodes = trigger.parentNode.childNodes;
+              for (var i = 0; i < nodes.length; i++) {
+                if (nodes[i].tagName === 'CODE') {
+                  return nodes[i];
+                }
+              }
+            }
+          });
+          clipboard.on('success', function(e) {
+            e.clearSelection();
+            e.trigger.innerHTML = e.trigger.innerHTML.replace('icon-copy', 'icon-success');
+            setTimeout(function() {
+              e.trigger.innerHTML = e.trigger.innerHTML.replace('icon-success', 'icon-copy');
+            }, 2000);
+          });
+        });
+      }
+    });
+  })();
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

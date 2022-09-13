@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>pixel logic阅读笔记</title>
+    <link href="/2022/07/18/pixel%20logic%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/"/>
+    <url>/2022/07/18/pixel%20logic%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="pixel-logic阅读笔记"><a href="#pixel-logic阅读笔记" class="headerlink" title="pixel logic阅读笔记"></a>pixel logic阅读笔记</h1><h1 id="为什么是这本书"><a href="#为什么是这本书" class="headerlink" title="为什么是这本书"></a>为什么是这本书</h1><p>我总是浪费时间在选择和搜索中，这的确很重要。但我无法确定哪些更好，既然无法确定，先开始再说。</p><p>这本书分为多个章节，我同时得到了英文版和中文机翻的电子书，两本互相参照着看。</p><h1 id="0-引言（introduction）"><a href="#0-引言（introduction）" class="headerlink" title="0.引言（introduction）"></a>0.引言（introduction）</h1><h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>选择适合你的软件工具，是你自己的能力决定作品是否优秀。</p><p>像素画的独特之处在于，你掌握每一个像素。</p><p>像素画起源于受限制。</p><p>完成一副画可以分很多步骤，选择你偏爱的。就像雕塑一样，从一块石头开始，雕琢它，为它添加像素。</p><h2 id="硬件工具"><a href="#硬件工具" class="headerlink" title="硬件工具"></a>硬件工具</h2><p>鼠标键盘或者再加上数位板</p><h2 id="复古的硬件"><a href="#复古的硬件" class="headerlink" title="复古的硬件"></a>复古的硬件</h2><p>讲述了过去受制于技术水平时人们使用的工具，似乎也是一段计算机发展史。</p><h2 id="软件程序"><a href="#软件程序" class="headerlink" title="软件程序"></a>软件程序</h2><p>推荐了一些软件，我使用了aseprite.</p><h2 id="软件工具"><a href="#软件工具" class="headerlink" title="软件工具"></a>软件工具</h2><p>不管是什么软件，有四样必要工具。</p><p>1.能够精确到单个像素点的铅笔。</p><p>2.能够取色的吸管。</p><p>3.橡皮擦，当然你可以用白色或者透明来代替它，就像修正液一样。</p><p>4.用单一颜色涂满封闭曲线的油漆桶。.</p><p>像是 选择区域、旋转、替换颜色、调色、直线、圆也是必要的。</p><p>要尝试避免: 模糊、自带模糊的笔刷（画笔）、blurred gradients(模糊的渐变？)</p><p>之所以避免这些自动化的工具，是因为我们无法预测会发生什么。</p><p>记住：像素艺术中，我们要完全掌控自己在做什么。</p><h2 id="我的画布应该选多大"><a href="#我的画布应该选多大" class="headerlink" title="我的画布应该选多大"></a>我的画布应该选多大</h2><p>未知</p><p>注意你的对象和背景的比例。</p><h1 id="1-线条艺术（line-art）"><a href="#1-线条艺术（line-art）" class="headerlink" title="1.线条艺术（line art）"></a>1.线条艺术（line art）</h1><h2 id="序言-1"><a href="#序言-1" class="headerlink" title="序言"></a>序言</h2><p>线条是sprite的基础</p><h2 id="线和曲线"><a href="#线和曲线" class="headerlink" title="线和曲线"></a>线和曲线</h2><p>避免锯齿感的方法是不要让线条阶梯突然变化，最好有序的改变。</p><p>我们希望线条具有相同的阶梯，线条越陡，台阶越高。</p><h2 id="到处都是线"><a href="#到处都是线" class="headerlink" title="到处都是线"></a>到处都是线</h2><p>不要局限于你画出的线，不同颜色的交界处（包括阴影部分）也是线，同样要避免线条锯齿化。</p><p>后期的修改比直接画出完美的线更容易，你也可以通过拟合矢量线段来对比线条的锯齿感。</p><h2 id="轮廓线"><a href="#轮廓线" class="headerlink" title="轮廓线"></a>轮廓线</h2><h3 id="没有轮廓线"><a href="#没有轮廓线" class="headerlink" title="没有轮廓线"></a>没有轮廓线</h3><p>就是没有轮廓线，直接由不同的颜色色块组成</p><h3 id="黑色内部线条（black-inline）"><a href="#黑色内部线条（black-inline）" class="headerlink" title="黑色内部线条（black inline）"></a>黑色内部线条（black inline）</h3><p>整个轮廓和内部的各个色块的边界都使用黑色线条。</p><h3 id="黑色外形"><a href="#黑色外形" class="headerlink" title="黑色外形"></a>黑色外形</h3><p>仅仅是整个轮廓用黑色线段。</p><h3 id="上色的线"><a href="#上色的线" class="headerlink" title="上色的线"></a>上色的线</h3><p>和没有轮廓线相比，就是在最外层用了比内层更深的颜色。</p><h3 id="选择性的线"><a href="#选择性的线" class="headerlink" title="选择性的线"></a>选择性的线</h3><p>根据光源的位置和原本颜色画出的轮廓线，能够更好的融入环境和体现光源</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>不同类型的线将直接影响精灵的风格</p><h1 id="2-抗锯齿（anti-aliasing）"><a href="#2-抗锯齿（anti-aliasing）" class="headerlink" title="2.抗锯齿（anti-aliasing）"></a>2.抗锯齿（anti-aliasing）</h1><h2 id="序言-2"><a href="#序言-2" class="headerlink" title="序言"></a>序言</h2><p>抗锯齿通过在小角落添加像素来使得你的边界更加顺滑。</p><h2 id="AA还是不AA？"><a href="#AA还是不AA？" class="headerlink" title="AA还是不AA？"></a>AA还是不AA？</h2><p>并没有哪一个更好的说法，但是抗锯齿在像素艺术中是极其重要的。</p><p>这里列举了一些例子，它们因为AA了而更好更坏或基本没变。这和作品大小背景风格和用途都相关。</p><h3 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h3><p>AA的优点：在小的精灵中使曲线更顺滑、在大精灵中是必要的、次像素动画（sub-pixeling animation）</p><p>AA的缺点：过度使用会很单调、模糊了微小的精灵</p><p>不AA的优点：让小精灵更具有可读性、限制了颜色、更快</p><p>不AA的缺点：创造力了有锯齿的线条、尖锐化和区块化</p><h2 id="何时必要？"><a href="#何时必要？" class="headerlink" title="何时必要？"></a>何时必要？</h2><h3 id="清晰"><a href="#清晰" class="headerlink" title="清晰"></a>清晰</h3><p>角色、脸和眼睛常常是吸引人注意的地方，最好让它们清晰易于辨认。</p><h3 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h3><p>小曲线通常有更大的锯齿感。</p><h3 id="高对比"><a href="#高对比" class="headerlink" title="高对比"></a>高对比</h3><p>如果有两个高度不同的颜色，最好使用过渡像素混合它们。</p><h3 id="线的粗细"><a href="#线的粗细" class="headerlink" title="线的粗细"></a>线的粗细</h3><p>通过AA，你能使线更粗或更细。</p><h2 id="怎么应用"><a href="#怎么应用" class="headerlink" title="怎么应用"></a>怎么应用</h2><p>我要添加多少区域：大约原线段的一半。</p><p>我应该添加多少阴影：一个去开始练习，两个为了更顺滑的结果，三个如果你足够自信。一般是一个和两个混杂。</p><p>我在哪个角落填充：接下来的内容</p><h2 id="平坦的曲线"><a href="#平坦的曲线" class="headerlink" title="平坦的曲线"></a>平坦的曲线</h2><p>平坦意味着更长的台阶，更长的台阶意味着更长的AA</p><p>更长的台阶同时意味着更多阴影的AA</p><h2 id="45°线"><a href="#45°线" class="headerlink" title="45°线"></a>45°线</h2><p>能通过AA使得直线稍微弯曲</p><p>曲线的AA中心更亮或是更暗取决于曲线的类型</p><p>这里的凹凸意思是我们注意的是曲线的凸凹部分。比如球是凸的，月牙凹弦一侧是凹的。（我干脆两个都用月牙算了）</p><h3 id="凸线"><a href="#凸线" class="headerlink" title="凸线"></a>凸线</h3><p>中心更浅，两边更深。</p><h3 id="凹线"><a href="#凹线" class="headerlink" title="凹线"></a>凹线</h3><p>中心深，两边浅</p><h2 id="有锯齿感的直线"><a href="#有锯齿感的直线" class="headerlink" title="有锯齿感的直线"></a>有锯齿感的直线</h2><p>通过在最大的间隙处添加浅色像素消除锯齿感，可以反复添加，但不要过度。</p><h2 id="线段的轻重"><a href="#线段的轻重" class="headerlink" title="线段的轻重"></a>线段的轻重</h2><p>更重的线段感觉更厚，轻则薄。AA常常使线段感觉更厚，更少的AA有时使线段更细更尖锐。</p><h2 id="色素绑定"><a href="#色素绑定" class="headerlink" title="色素绑定"></a>色素绑定</h2><p>相同长度的两块像素粘在一起，这很不好。</p><p>为什么不好？</p><p>1.它使你的曲线块状化。2.它使你的线更薄。3.它模糊了你的轮廓。4.它导致了pillowshading，似乎意味着不符合光源规律</p><p>如何修复。</p><p>通过添加或减少一两个像素改变、进行AA</p><h2 id="总结-2"><a href="#总结-2" class="headerlink" title="总结"></a>总结</h2><p>不断观察尝试练习</p><h1 id="3-颜色（colour）"><a href="#3-颜色（colour）" class="headerlink" title="3.颜色（colour）"></a>3.颜色（colour）</h1>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>暑假计划</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>pr学习笔记</title>
+    <link href="/2022/06/15/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <url>/2022/06/15/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="pr学习笔记"><a href="#pr学习笔记" class="headerlink" title="pr学习笔记"></a>pr学习笔记</h1><p>第一天</p><h2 id="1-新建项目"><a href="#1-新建项目" class="headerlink" title="1.新建项目"></a>1.新建项目</h2><p>软件的基础打开</p><h2 id="2-新建序列"><a href="#2-新建序列" class="headerlink" title="2.新建序列"></a>2.新建序列</h2><p>新建序列的两种方式，ctrl+n，两种主要的预设n制和P制，关于帧、像素、场序等的一些了解，可以自定义一个预设。</p><h2 id="3-了解pr工作区"><a href="#3-了解pr工作区" class="headerlink" title="3.了解pr工作区"></a>3.了解pr工作区</h2><p>先是从布局上大致介绍了pr界面。然后详细介绍了编辑界面以及一些小的界面。包括源界面、工作区、节目区、时间轴等。</p><h2 id="4-如何导入素材"><a href="#4-如何导入素材" class="headerlink" title="4.如何导入素材"></a>4.如何导入素材</h2><p>两种方法，仍然是工作区，和菜单栏两个位置。要注意的就是导入的文件格式，可以是图片、视频、音频、工程文件等等。</p><h2 id="5-视图的切换"><a href="#5-视图的切换" class="headerlink" title="5.视图的切换"></a>5.视图的切换</h2><p>首先可在工作区新建一些素材包，实际上就是一些装着不同类型素材的文件夹。可通过~键将工作区放大或者双击工作区顶部切换浮窗的地方。关于那些素材包的视图可通过左下角的按钮切换。分别为列表视图和图标视图。列表视图可以直接在一个窗口总览素材的属性，图标视图则必须点进去才能看到素材，但是更详细。</p><h2 id="6-时间轴初始"><a href="#6-时间轴初始" class="headerlink" title="6.时间轴初始"></a>6.时间轴初始</h2><p>首先是把素材拖进时间轴。时间轴又分为视频轨道和音频轨道，视频轨道为v，音频为A,这里还有一些对轨道的细节操作。比如添加轨道，分为主动和被动两种。轨道前面的锁定与可见与否按钮的介绍。轨道左侧上方还有5个按钮，分别有不同的作用，较为重要，以后会经常用。轨道可进行上下放大，显示更详细的信息。</p><h2 id="7-如何拖拽素材"><a href="#7-如何拖拽素材" class="headerlink" title="7.如何拖拽素材"></a>7.如何拖拽素材</h2><p>在工作区双击素材然后在源界面查看，用入点和出点选择希望使用的一段，直接在特定按钮处按下左键进行拖拽可只拖拽视频或者音频。而直接从视频图画上进行拖拽可同时拖拽。但是要注意时间轴上可选择轨道，如果没有同时选中两种，则将只能拖拽一种。</p><h2 id="8-取消视频音频链接"><a href="#8-取消视频音频链接" class="headerlink" title="8.取消视频音频链接"></a>8.取消视频音频链接</h2><p>ctrl+l或者直接右键选项可以开关视频音频链接。视频音频链接的时候视频的后面有个V，音频后面有个A，正常情况下是两个会一起被操作。但若是关闭了时间轴左上角的链接选择项，则可以单独操作一个，但实际上二者还是链接在一块连着的。</p><h2 id="9-标记入点及出点"><a href="#9-标记入点及出点" class="headerlink" title="9.标记入点及出点"></a>9.标记入点及出点</h2><p>出入点在源界面可以选择特定的视频片段，在工作区也可以选择特定的片段进行渲染或导出。添加的效果未渲染时是红色，渲染后变绿色，渲染快捷键是回车。取消的话可以鼠标右键。</p><p>第二天</p><h2 id="10-标记点"><a href="#10-标记点" class="headerlink" title="10.标记点"></a>10.标记点</h2><p>原窗口的标记点是直接打在素材上的，而时间轴和节目轴的标记点则是打在时间轴上，快捷键m。 可编辑标记点的内容，包括名称注释颜色，可对颜色分类代表不同功能。右键更多操作，包括清除。</p><h2 id="11-时间码"><a href="#11-时间码" class="headerlink" title="11.时间码"></a>11.时间码</h2><p>源窗口，节目窗口，时间轴的左边都有蓝色的时间码，代表当前位置。最大为小时，最小为帧。念法忽略前导0。可分别对不同单位进行修改跳转时间，也可直接输入数字，默认从最低位开始，自动补齐前导0。如输入超过最大数，自动进位。</p><h2 id="12-速度与持续时间"><a href="#12-速度与持续时间" class="headerlink" title="12.速度与持续时间"></a>12.速度与持续时间</h2><p>鼠标右键点击可调整速度与持续时间，也可实现倒放，若持续时间与另一段视频重合，则被覆盖。一般速度和持续时间有一个正比的关联关系，可通过开关进行调整。 还可以使用比率拉伸工具，调整时间的同时正比速度调整。</p><h2 id="13-重命名"><a href="#13-重命名" class="headerlink" title="13.重命名"></a>13.重命名</h2><p>对于项目窗口和时间轴窗口的素材均可通过右键找到重命名或者选中后在菜单栏的剪辑处找到重命名。项目窗口中的还可以双击名称重命名。序列可进行更改设置，选中序列，然后在菜单栏中序列的序列设置就可以更改设置了。</p><h2 id="14-新建项"><a href="#14-新建项" class="headerlink" title="14.新建项"></a>14.新建项</h2><p>项目窗口可进行新建项，包括：序列、项目快捷方式、暂时占位可被替换的脱机文件、透明可以用来调色或者添加效果的调整图层（尽量不要直接在原视频进行调色）、暂停思绪的彩条、黑场视频、字幕、不透明的颜色遮罩、可自定义的通用倒计时片头、类似调整图层的透明视频。</p><h2 id="15-效果控件"><a href="#15-效果控件" class="headerlink" title="15.效果控件"></a>15.效果控件</h2><p>位于源窗口的效果控件可直接调整所选视频的效果，包括各种内容。最初只有基础效果，可通过从工作区拖拽效果进入原窗口添加效果。类似于ae，可为之添加关键帧，打开效果前面的三角号，可对变化速度进行调节。还可以框住关键帧，设置缓入缓出贝塞尔曲线等效果设置。贝塞尔曲线就是软件中用钢笔绘图作的线。</p><h2 id="16-上下黑白边"><a href="#16-上下黑白边" class="headerlink" title="16.上下黑白边"></a>16.上下黑白边</h2><p>文件新建中的旧版标题，虽说是旧版标题却写着字幕，翻译问题？新建后从原窗口拖拽至时间轴即可。还可通过直接在节目窗口进行操作添加，从时间轴的钢笔工具处可找出画矩形的工具，直接在节目窗口绘画即可。可通过点击加号添加安全边距等小按钮，方便操作。</p><h2 id="17-打包工程"><a href="#17-打包工程" class="headerlink" title="17.打包工程"></a>17.打包工程</h2><p>当要更换设备时，为了继续之前的操作需要将工程文件打包移动。点击菜单栏文件中的项目管理即可对工程文件打包，然后复制到待用位置。但是pr软件对素材的链接位置说固定的，这样做可能会产生脱机文件。</p><h2 id="18-脱机文件"><a href="#18-脱机文件" class="headerlink" title="18.脱机文件"></a>18.脱机文件</h2><p>当导入工程或者模板时，素材的位置可能已经发生了移动，这时可以在进入提醒的界面进行查找，也可以在时间轴的脱机文件上右键选择链接媒体，然后查找素材（以文件名和扩展名匹配），即可改变脱机。脱机文件可用于当一段素材不需要剪辑或者需要更换时，为了节省电脑内存，右键将其设为脱机文件。</p><h2 id="19-删除素材及序列"><a href="#19-删除素材及序列" class="headerlink" title="19.删除素材及序列"></a>19.删除素材及序列</h2><p>项目窗口的文件删除，只是移除。delete键，右键清除，垃圾桶三种。时间轴上的也能delete和右键，但是只是从序列中删除，项目窗口仍有，也可以删除空白处，成为波纹删除。序列也可从时间轴移除，点击左边叉号或横杠中的关闭面板。</p><h2 id="20-设置标识帧"><a href="#20-设置标识帧" class="headerlink" title="20.设置标识帧"></a>20.设置标识帧</h2><p>在项目窗口的图标视图浏览视频素材时，封面往往是视频的第一帧，可通过直接在素材上拖动下方游标预览，当拖动到某一帧时右键设置为标识帧即可将封面呈现为此。有利于辨别视频内容。</p><h2 id="21-关键帧"><a href="#21-关键帧" class="headerlink" title="21.关键帧"></a>21.关键帧</h2><p>可通过效果控件处的属性直接打关键帧。也可在时间轴的素材上直接进行。将素材变宽可以看到一条白线，一般情况视频是不透明度，音频是音量，可通过钢笔打点设置关键帧，拖动点上下左右位置来实现属性的改变，一般是线性变化。也可以右键贝塞尔曲线，和效果控件处基本一致。</p><h2 id="22-效果栏"><a href="#22-效果栏" class="headerlink" title="22.效果栏"></a>22.效果栏</h2><p>从项目窗口可以选择效果。基础的话包括音视频效果以及过渡和预设。可以自己创造一些效果或者从外部导入放置到窗口中，然后调整各种参数。效果太多了，全部记住不太现实，有些仅需稍微了解，可通过在顶部搜索栏中直接搜索名称达到对应效果。应该在各种案例中不断熟悉对效果的使用。</p><h2 id="23-字幕工具初始"><a href="#23-字幕工具初始" class="headerlink" title="23.字幕工具初始"></a>23.字幕工具初始</h2><p>可以通过文件中的旧版标题设置字幕，也可以通过工具栏的文本直接设置。</p><h2 id="24-导出设置"><a href="#24-导出设置" class="headerlink" title="24.导出设置"></a>24.导出设置</h2><p>可通过快捷键CTRL+m或者菜单栏文件中导出。导出的设置中，AVI代表基本不压缩的最高画质，h.264(mp4)画质降低，mov(quicktime),FLV画质最低。导出窗口下面还可进行更加详细的设置。</p><h2 id="25-无名之辈电影开头"><a href="#25-无名之辈电影开头" class="headerlink" title="25.无名之辈电影开头"></a>25.无名之辈电影开头</h2><p>无名之辈的电影开头是一个人在狭窄的走廊中追赶另一个人。然后随着音乐，视角上下压缩逐渐变窄，然后在屏幕上方被压缩的视角黑框处出现透明的大字，大字中有视频在播放。简单还原，直接设置裁剪两个关键帧就可以形成压缩，然后在最后面添加一个旧版标题添加字母。接着就可以拿出要在透明字中显示的视频，不过要把这个视频放在字幕和原视频之间，然后再找到轨道遮罩效果，点击遮罩选择字幕所在的视频图层，即可完成。之后如果要设置转场效果的话一定要将视频和字幕嵌套在一起否则轨道遮罩会失效。</p><h2 id="26-文字溶解"><a href="#26-文字溶解" class="headerlink" title="26.文字溶解"></a>26.文字溶解</h2><p>首先设置一个旧版标题的字幕。主要就是用到了粗糙边缘的效果，这个效果中的边框参数从高到低就是字体从模糊溶解到清晰的过程。</p><h2 id="27-快闪字幕"><a href="#27-快闪字幕" class="headerlink" title="27.快闪字幕"></a>27.快闪字幕</h2><p>大概是我的问题，我只觉得很尬是怎么回事？这个案例要用到ps所以暂时先放着，以后再重复。</p><h2 id="28-偷影子教程"><a href="#28-偷影子教程" class="headerlink" title="28.偷影子教程"></a>28.偷影子教程</h2><p>一个泡着一株花的水杯静止不懂，影子中一只手拿走了杯子上的花。实际上是蒙版的一个介绍。首先复制两份视频，将上层的视频开头设置帧定格，然后用不透明度中的钢笔工具再上层画一个形状就行了，接下来这部分会始终保持不动，其他部分则呈现下层视频。轨道遮罩分为alpha遮罩和亮度遮罩，可设置反向。前者以有信息处透明，后者有亮度处透明，且成线性。</p><h2 id="29-调色"><a href="#29-调色" class="headerlink" title="29.调色"></a>29.调色</h2><p>没看懂。感觉就是自己做了个滤镜。</p><p>第三天</p><h2 id="30-建筑物生长案例"><a href="#30-建筑物生长案例" class="headerlink" title="30.建筑物生长案例"></a>30.建筑物生长案例</h2><p>似乎越往下的案列越要依赖ps，也许有必要再去学习下ps，不过这次给好了素材和图，直接就拿来使用了。</p><p>首先将视频放入序列中，选定合适的位置进行建筑物生长。然后就可以在这里放置扣下来的图片了，然后给这个图片添加一个变换效果并设置两个关键帧就行了。可以设置细节比如快门角度调为360使之模糊。</p><h2 id="32-卡点教程"><a href="#32-卡点教程" class="headerlink" title="32.卡点教程"></a>32.卡点教程</h2><p>首先找一段有鼓点的音乐，可以使用某些插件自动打点，也可以看音频的那个波图打点，也可以听音乐手动打点。然后再素材区选择自己要播放图片，全选后自动匹配序列，然后基本就成了。可以自己做一个转场效果，比如抖动模糊类的，之后全选保存预设就可以有一个自己的转场效果并且勾选多个素材一键使用。</p><h2 id="33-变速效果"><a href="#33-变速效果" class="headerlink" title="33.变速效果"></a>33.变速效果</h2><p>这玩意应该不用讲吧，跳过了。</p><h2 id="34-变声效果"><a href="#34-变声效果" class="headerlink" title="34.变声效果"></a>34.变声效果</h2><p>就是介绍一个效果音高转换器。</p><h2 id="35-分屏效果"><a href="#35-分屏效果" class="headerlink" title="35.分屏效果"></a>35.分屏效果</h2><p>可以利用一个效果叫做线性擦除，也可以利用裁剪很快达到。</p><h2 id="36查找边缘"><a href="#36查找边缘" class="headerlink" title="36查找边缘"></a>36查找边缘</h2><p>就是利用了一个叫做查找边缘的效果。</p><p>至此，pr基础篇结束。暂停学习，接下来将先将期末作业各种东西完成。pr学习到此为止。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>暑假计划</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>人们总是喜新厌旧</title>
+    <link href="/2022/06/11/%E4%BA%BA%E4%BB%AC%E6%80%BB%E6%98%AF%E6%97%A0%E7%97%9B%E5%91%BB%E5%90%9F/"/>
+    <url>/2022/06/11/%E4%BA%BA%E4%BB%AC%E6%80%BB%E6%98%AF%E6%97%A0%E7%97%9B%E5%91%BB%E5%90%9F/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="更换了博客主题"><a href="#更换了博客主题" class="headerlink" title="更换了博客主题"></a>更换了博客主题</h1><font face="kaiti" size='4'><p>每次我遇到一个惊艳的主题都会大加赞叹，<br>但得到后不久便不知不觉中厌倦。<br>无论是反复听一首好听的歌，还是将美丽的图画设为壁纸。<br>事物的吸引人之处都在反复欣赏中被磨损，直至习以为常，逐渐遗忘。<br>好在这世上有无穷尽的新事物，有无穷的新过客。很多东西不如不得到。</p><blockquote><p>生命是一团欲望，欲望不能满足便痛苦，满足便无聊，人生就在痛苦和无聊之间摇摆。（《叔本华文集：悲观论集卷》）</p></blockquote><hr><p>这次更换了主题。<br>相比上一个主题，这个主题更加漂亮，也更加完整，很轻易的增添上了评论功能。<br></font></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>思考</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>收藏我正在尝试阅读的电子书</title>
+    <link href="/2022/06/05/%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/"/>
+    <url>/2022/06/05/%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><font size='5' face="kaiti"><h1 id="收藏我正在尝试阅读的电子书"><a href="#收藏我正在尝试阅读的电子书" class="headerlink" title="收藏我正在尝试阅读的电子书"></a>收藏我正在尝试阅读的电子书</h1><p>真是越学习越是发现自己的笨拙与无知。<br>刚刚发现的GitHub的一个好东西。<br>pdf文件在仓库里。<br>看这里。<br>↓<br><a href="https://interestcausesthis.com/e-book-I-have-read/">阅读记录</a></p></font>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>收藏</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>收藏我在互联网上见到的有趣的网站、视频或人或文。</title>
+    <link href="/2022/05/31/%E6%94%B6%E8%97%8F%E4%BB%8E%E6%9C%AA%E5%81%9C%E6%AD%A2/"/>
+    <url>/2022/05/31/%E6%94%B6%E8%97%8F%E4%BB%8E%E6%9C%AA%E5%81%9C%E6%AD%A2/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="有趣或者有用的东西"><a href="#有趣或者有用的东西" class="headerlink" title="有趣或者有用的东西"></a>有趣或者有用的东西</h1><font face="kaiti" size='5'><p>1.<a href="https://interestcausesthis.com/">近在咫尺</a>。 <a href="https://interestcausesthis.com/">https://interestcausesthis.com</a> 哈哈  </p><p>2.zlibrary 全球最大的数字图书馆。 网址常常变更，直接去搜可以找到</p><p>3.<a href="https://www.tboxn.com/">TBOX导航</a>。 这个网站收录了大量有趣精致的在线工具。</p><p>4.<a href="https://www.aigei.com/">爱给网</a>。 游戏素材网站，当年用qt做小游戏时用过一会。</p><p>5.<a href="https://wallhaven.cc/">一个精美的壁纸网站</a></p><p>6.<a href="https://www.google.com/intl/zh-CN/earth/">google地球</a>（墙）。 很有名，但我刚知道。我能玩一天。</p><p>7.<a href="https://www.hi2future.com/">时光邮局</a>。<br>其实不是很乐意收录这个，因为它总是提醒我我已经写了那封信了。但是这个网站真的真的意义非凡。<br>解忧杂货铺的感觉哈哈。</p></font>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>收藏</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>如何制作一个博客</title>
+    <link href="/2022/05/29/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2022/05/29/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><font face="kaiti" size = 4><h1 id="如何制作博客"><a href="#如何制作博客" class="headerlink" title="如何制作博客"></a>如何制作博客</h1><h2 id="制作前准备"><a href="#制作前准备" class="headerlink" title="制作前准备"></a>制作前准备</h2><h3 id="1-什么是博客"><a href="#1-什么是博客" class="headerlink" title="1.什么是博客"></a>1.什么是博客</h3><p>假如不查看百度百科，仅以直观的个人理解。<br>博客就是一个网站，之所以称为博客是因为网站的内容常常是个人的一些思考。</p><p>假如百度百科：<a href="https://baike.baidu.com/item/%E5%8D%9A%E5%AE%A2/124">博客</a><br>简言之，Blog就是以网络作为载体，简易迅速便捷地发布自己的心得，及时有效轻松地与他人进行交流，再集丰富多彩的个性化展示于一体的综合性平台。</p><p>这里又没有考试和标准答案，所以怎么理解都无妨。<br>反正我是只把它当作一个普通网站。</p><h3 id="2-为什么写博客"><a href="#2-为什么写博客" class="headerlink" title="2.为什么写博客"></a>2.为什么写博客</h3><p>所以我为什么写博客呢？<br>最初的时候只是大一的某一天突然想起来似乎是小学时候的很久以前听到过“博客”这个词，所以随手就搜了。<br>结果，我焯！这么酷炫！<br>于是就开始在网上找教程了。</p><p>总而言之，是为了<strong>装B</strong>。<br>然而我同样可以找到很多文章描述做它的好处，或者做它的没用之处。这得看你怎么想了，反正为了装逼这一个理由就已经足够让我去尝试了。</p><h2 id="前置思考"><a href="#前置思考" class="headerlink" title="前置思考"></a>前置思考</h2><h3 id="如何在互联网上创建一个网站？"><a href="#如何在互联网上创建一个网站？" class="headerlink" title="如何在互联网上创建一个网站？"></a>如何在互联网上创建一个网站？</h3><p>网站由前端、后端和数据库组成。<br>前端是直接和用户交互的部分，后端控制着网站的输入输出。数据库是储存着网站数据的地方。<br>当你打开一个网站，直接能看到的页面是前端。然后你在搜索框中搜索“如何让富婆爱上我”，一秒钟后出现了若干相关的视频或文章或链接。在这个过程中，在后端，你的输入通过服务器的处理，返回了这些从数据库中得到的相关数据。    </p><hr><p>或者我们不管这么多。<br>以最朴素的直观感觉来看看如何制作一个。<br>点击链接或者输入网址能够打开网站，不同的网址导向不同的网站（不知道你有没有试过随便输入几个网址能到达什么未知的世界，就好像随便输入腾讯会议号希望能遇见有趣的会议。）我们希望有一个属于自己的网址，当在浏览器中输入这个网址时能到达我们自己设计的网页。网址又分为ip地址和域名地址。ip地址就是类似220.181.38.150（百度的ip地址）这样的一串数字和点，复制到浏览器可直接到达百度首页。而域名地址则是      <a href="http://www.baidu.com/">www.baidu.com</a> 这样的字母组成的。ip地址往往由服务器直接分配，而域名则可以通过购买获得。我们可以通过GitHub提供的github-pages托管服务直接借用GitHub的服务器，得到一个属于我们自己的ip地址，并得到一个“yourgithubname.github.io”的域名地址，不过会被墙。为了能让朋友访问自己的网站来装逼，我们还需要在阿里云或者腾讯云购买自己想要的域名的使用权，并在商家的域名设置处把域名地址和我们的ip地址绑定，达到输入域名就能到网站的结果，理论上你能把自己的域名绑定任意ip，比如百度B站。所以ip地址只有一个域名可有多个，各种镜像网站大概也是这个道理。  </p><p>好了现在我们成功的拥有了自己的网址，但是此时输入网址后进去却什么也看不到。这是理所当然的，因为我们的确什么都没做。</p><p>如何让网站显示我们希望的页面？</p><p>这就需要在数据库中上传我们希望的页面，这些页面由html,css,js组成。<br>似乎这么简单就完成了？就是这么简单。但前提是我们有服务器和前端文件。<br>制作博客有很多工具。</p><h2 id="开始制作"><a href="#开始制作" class="headerlink" title="开始制作"></a>开始制作</h2><p>假定我们遵循前置思考中的思维历程，那么可以分为网页托管、静态网页生成、上传博客。<br>我的博客是通过github-pages静态网页托管服务，以hexo作为静态博客框架生成的。<br>主要参考教程是<a href="https://zhuanlan.zhihu.com/p/102592286">从零开始搭建博客（超详细）</a>。<br>如果你也希望用github和hexo搭建，可以使用以上教程，真的是超详细。</p><p>为了从零开始演示制作的过程，也为了使自己不是在做简单的重复。我决定使用gitee-pages(国内的代码托管平台)和jekyll重新制作一个。</p><h3 id="1-网页托管"><a href="#1-网页托管" class="headerlink" title="1.网页托管"></a>1.网页托管</h3><p>我的理解是当你打开一个网页时，浏览器从服务器获取你的静态网页，然后展示出来。而这个服务器可以是静态网页托管，即gitee-pages。</p><h4 id="1-注册gitee账号"><a href="#1-注册gitee账号" class="headerlink" title="1.注册gitee账号"></a>1.注册gitee账号</h4><p>过程很简单，搜索浏览器搜索gitee官网，注册即可。<br>注册后可以先熟悉下gitee页面和如何使用。</p><h4 id="2-新建一个仓库"><a href="#2-新建一个仓库" class="headerlink" title="2.新建一个仓库"></a>2.新建一个仓库</h4><p>点击右上角加号然后新建仓库<br><img src="/../uTools_1655096599340.png" alt="新建">  </p><p>仓库名称可以随便填，但建议填自己gitee账号的名字，为马上做准备。</p><h4 id="3-开启gitee-pages"><a href="#3-开启gitee-pages" class="headerlink" title="3.开启gitee-pages"></a>3.开启gitee-pages</h4><p><img src="/uTools_1655097295072.png" alt="服务"><br>这里点击readme初始化，然后点击右上角服务，点击gitee-pages.<br>接下来要进行实名认证，还要等工作人员审核，属实麻烦。按步骤来吧。</p><p>MD两次审核都失败了，审核速度还慢的要命，根本没多少人实名认证吧。服了，暂时断更。</p></font>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>暑假计划</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>暑假计划</title>
+    <link href="/2022/05/22/%E6%9A%91%E5%81%87%E8%AE%A1%E5%88%92/"/>
+    <url>/2022/05/22/%E6%9A%91%E5%81%87%E8%AE%A1%E5%88%92/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><font face="kaiti" size = '4'>现在是2022年5月22日，距离高考仅剩大约两周，离本学期期末考也仅剩1个月。  暑假在即，想我在过去的几乎每个暑假或寒假之前都曾列出各种提升自己的计划，但基本都无一例外的中道崩殂。唯一一次值得提起的坚持经历恐怕就是去年的暑假给亲戚家小孩一连补课20天，之所以能坚持也不过是由于外部因素的驱动。  <p>不管怎么说，再尝试一次吧，这次标准降低些，不求一定能达到好的效果，仅仅为求能坚持下来。</p><h2 id="0-更新博客记录自己建立博客网站的过程"><a href="#0-更新博客记录自己建立博客网站的过程" class="headerlink" title="0.更新博客记录自己建立博客网站的过程"></a>0.更新博客记录自己建立博客网站的过程</h2><p>不能随便糊弄！</p><h2 id="1-学习B站上的90分钟AE教程"><a href="#1-学习B站上的90分钟AE教程" class="headerlink" title="1.学习B站上的90分钟AE教程"></a>1.学习B站上的90分钟AE教程</h2><h2 id="2-自学unity并至少做出或模仿出一个简单游戏"><a href="#2-自学unity并至少做出或模仿出一个简单游戏" class="headerlink" title="2.自学unity并至少做出或模仿出一个简单游戏"></a>2.自学unity并至少做出或模仿出一个简单游戏</h2><h2 id="3-自学python-成功标准为是否能实现一个普通项目"><a href="#3-自学python-成功标准为是否能实现一个普通项目" class="headerlink" title="3.自学python,成功标准为是否能实现一个普通项目"></a>3.自学python,成功标准为是否能实现一个普通项目</h2><p>部分自学内容将更新在博客上（虽然懒得去报备博客网站有可能会被封，但GitHub上的子网页将始终存在）</p><p>放假之前除了更改计划，大概不会再关注博客以及自学之类的了，复习去了。</p><p>对了，假如有人看。<br>强烈推荐<a href="https://csdiy.wiki/" title="cs自学指南">cs自学指南</a></p><hr><p><strong>我只能说感谢隔壁了，我的暑假计划开始了<br>复习个头</strong></p><p>在得知考试推迟到下学期然后摆烂了两天之后，我想是时候开始我的暑假计划了。  </p><p>说实话这摆的两天让我深刻的明白了自己的自控力是真垃圾，所以我更改了原定于5月31的返乡计划，现在打算6月22号再走。</p><p>现在是5月29号下午17点52，加油少年。。。</p><p>…………<br>很抱歉摆烂了一暑假，以上内容当笑话看吧。。</p></font>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>暑假计划</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>5-19学习成果</title>
+    <link href="/2022/05/19/%E4%B9%A6%E6%8E%A5%E4%B8%8A%E5%9B%9E/"/>
+    <url>/2022/05/19/%E4%B9%A6%E6%8E%A5%E4%B8%8A%E5%9B%9E/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><font size="4" face="kaiti">好吧  必须承认我大概是走错了路，添加不了评论的原因并不是因为不会html或js,css。  它只是因为我在自己的一堆文件夹中始终找不到对应的html文件，即使更改了所有我能找到的html文件的对应位置，博客页面依旧不会发生任何的改变。这大概是合理的，因为以往仅仅通过更改配置文件就能直接更改网页的便利与此发生了冲突。或许内部有着更加简单的原因而我未曾发现。所以我暂时放弃浪费时间不断试错。<p>关于html的学习，我显然不打算学习得非常深入以至于达到写出一个很好的网页的水平。但是我不得不说这玩意真的太简单了。就像学习如何打字一样简单。唯一值得一提的就是有很多标签短时间难以记住，但就算记住了长时间不用也会忘记，我只能说有用到的功能时上网查就行了，如果真的有一天要想要用html完成一个工作，那么恐怕在工作之初就已经在不断查询学习中学会了。暑假可能会搞一搞。</p><p>至少我了解了html的基本语法和常用标签，已经可以无障碍阅读部分html文件了。这样就足够了，话说这就是我最初的目的才对啊。</p><p>tnnd,一分钟之后我又回来了。<br>原因是因为我刚刚才注意到，提交到GitHub上时生成了一堆html文件，这不就是我朝思夜想得html文件吗，原来是提交的时候会生成。不能妄下结论，但至少现在有了线索。</p><p><img src="/../uTools_1652961688130.png" alt="图片"></p></font>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>关于为什么没有开启评论功能</title>
+    <link href="/2022/05/18/%E6%B2%A1%E5%BC%80%E8%AF%84%E8%AE%BA%E7%9A%84%E8%AF%B4%E6%98%8E/"/>
+    <url>/2022/05/18/%E6%B2%A1%E5%BC%80%E8%AF%84%E8%AE%BA%E7%9A%84%E8%AF%B4%E6%98%8E/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><font size ="5" face="华文行楷"><p>我本来打算使用<font face="kaiti"><strong>Gitalk</strong></font>来添加评论功能，但摆弄一阵子发现怎么都弄不好。<br>分析原因是由于评论功能的添加是要直接改变博客的html和js文件。由于目前使用的博客模板很简单，并没有在配置文本中设置评论功能，想要直接添加评论只能换模板。</p><p>但是我是脑残吗？我又不是为了做博客而做博客的。虽然最初的目的只是装逼，但是现在我可是打算用它记录我的学习过程的。再说就算是以前的BUTTERFLY模板安装<strong>来必力</strong>（另一种评论工具）时也因为一直失败而不了了之。所以我决定开始学习<font face="楷体">html、js、css</font>。这样既能成功安装评论，也能解决一些以前建博客时的疑惑。<br>目前看了一会html，发现这玩意原来不是编程语言，只是一个简单的标记语言，与markdown类似，正好可以同步学习。</p><p>html语言以&lt;标记语言&gt;”文本”&lt; &#x2F;标记语言&gt;为元素。<br>区域划分为head、body、end.<br>其中不同的元素有不同的含义。<br>比如h2对应二级标题<br>和markdown中的两个#功能一致。</p><h2>比如这就是用html语言写的标题</h2><p>补充说明js控制交互，html控制文本，css控制布局</p><p>不得不说vscode太<font face="kaiti"><strong>TMD</strong></font>好用了,相比之下markdown都不香了。</p></font>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>博客建设</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>反思</title>
+    <link href="/2022/05/18/%E5%8F%8D%E6%80%9D/"/>
+    <url>/2022/05/18/%E5%8F%8D%E6%80%9D/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我是在大学，还是只是大一点的高中？"><a href="#我是在大学，还是只是大一点的高中？" class="headerlink" title="我是在大学，还是只是大一点的高中？"></a><font face="华文行楷">我是在大学，还是只是大一点的高中？</font></h1><p><font face="楷体" size="4">我仍旧时常怀念起那个闷热的夜间，忘记了是高二还是高三的那个拥挤的宿舍空间。一群人畅想着大学里的美好生活。<br>我想我当时的幻想也一定十分美好：在一个好的大学里，学一门乐器，邂逅一个相互一见钟情的女孩，始终保持着良好的状态，轻松地学习专业知识。<br>然而现实却是，没有乐器，没有一见钟情，亦没有轻松地学习。我仍旧匆匆行走，避开陌生的视线，尽量走在树荫中，竭力成为一个不惹人注目的路人。<br>有时不经意间被人注视，我会马上避开视线，即使只是陌生人。过去，这种现象也时常发生在某个人身上，我曾一度以为是因为自己喜欢她，才不由自主地避开。后来发现是因为很少有人注视我，我惧怕的，是每一个未知的视线，我渴望始终隐藏在人群中，但无论如何不想平庸。<br>听起来似乎很不好，我没能成为开放热情的模范青年，没能成为一呼百应的中心。但那也许只是因为我不想成为那样。我一点都不想引人注目，因为那<strong>太麻烦</strong>，太麻烦了。不得不忍受别人的目光、议论、猜测。我只是想低调单纯的生活。有几个要好的朋友，做着自己热爱的事情。ddl将至仍旧满怀兴趣地搭建着博客，一如曾经高中抛开作业，钻研一个不知道是否有答案的问题两节课。  </p><h1 id="大学生活显然是不如梦想中的，这其中既有本人自己的不自控，又有学校的不如意。"><a href="#大学生活显然是不如梦想中的，这其中既有本人自己的不自控，又有学校的不如意。" class="headerlink" title="大学生活显然是不如梦想中的，这其中既有本人自己的不自控，又有学校的不如意。"></a>大学生活显然是不如梦想中的，这其中既有本人自己的不自控，又有学校的不如意。</h1><p>又值高考将至，我想自己会很惬意的观看着这场一年一度的仪式，作为一个过来人，一个旁观者。</p><p>可是这时我重新审视自己，这一年里你怎么变化了？你得到了什么，又失去了什么？ 你配得上高考时自己的努力吗？你对自己失望吗？<br>慕然回首，才发现，自己的生活早已在不知不觉中木然。我似乎，正在把这个人人口中丰富多彩，十分向往的大学生活，过的比高中还烂。  </p><p>是的，我加入了多个社团，尽力想让自己的生活多彩一些，但也就百团大战时对此多关注。社团群里，也就刚进群里活跃一些。渐渐的，理所当然的，沉默的人依旧沉默，活跃的人也渐渐销声匿迹。我不再关注。</p><p>我注册了洛谷，力扣，立志成为算法大神，受人敬仰。可连签到甚至都没能超过三天。</p><p>我选修了数学建模，妄图摘金夺银，可是直到结课时才发现什么也没学到。最终考试题目也是随便糊弄。</p><p>这大学生活和我想的不一样。我想这大概是我的问题，我没看清它，却错怪它欺骗了我。</p><p>可是我想我还是又值得称赞的地方的。</p><p>我从开学时的每个老师、每节课都认真听讲，变得终于辨认出了哪些是设立之初就人尽皆知的垃圾水课，知道了哪些老师掩耳盗铃，完全不如我的高中老师。</p><p>我终于明白了哪些东西是设定之处就必将流于形式，众人却都闭口不言。  </p><p>我更加不在意别人的眼光。  </p><p>也许大学生活本就是这样，它客观存在，要看你如何对待。</p><p>我想目前自己最庆幸的事情就是两周之前心血来潮搭建了这个博客，它让我再次找到了许久未曾体验过的，高中时无视时间，单纯为兴趣而去解题的快乐。这和苦练元歌后乱杀的反馈类似，但更持久，更加令人激动。  </p><p>如果你在看，欢迎用GitHub账号评论（如果没有评论功能，说明我暂时遇到麻烦了）<br>我诚挚地邀请你也建一个博客，好让我的友链页面不至于荒废。<br>如果你没有GitHub账号，我同样诚挚地邀请你也创建一个，废话少说，现在开始吧。<br>有任何问题可直接询问我，我想你肯定认识我。</p><blockquote><p>这个世界上只有一种英雄主义，那就是认清生活的真相后依然热爱生活。<br></font></p></blockquote>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>思考</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>兴趣是最好的老师，愿你我师出同门。</title>
+    <link href="/2022/05/16/%E6%9C%89%E6%84%9F/"/>
+    <url>/2022/05/16/%E6%9C%89%E6%84%9F/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="没什么内容，就是想说标题。"><a href="#没什么内容，就是想说标题。" class="headerlink" title="没什么内容，就是想说标题。"></a>没什么内容，就是想说标题。</h1><h2 id="哈哈"><a href="#哈哈" class="headerlink" title="哈哈"></a>哈哈</h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>思考</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>git?</title>
+    <link href="/2022/05/11/git/"/>
+    <url>/2022/05/11/git/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="git"><a href="#git" class="headerlink" title="git?"></a>git?</h1><p>看到<strong>git</strong>也许你第一时间想到的是<strong>分布式版本控制系统</strong>，<br>又或者是英文中它的本意：<strong>傻瓜</strong>。</p><p>我今天要写的是第一种含义。<br>当然看起来也和<strong>傻瓜</strong>本意有一些联系。</p><p>博主本人知识水平有，以下内容大多通过互联网搜及，如有错误，恳请指正。</p><p><del>实际上写这篇内容也只是为了熟悉下<strong>markdown</strong>语法</del></p><h2 id="什么是git？"><a href="#什么是git？" class="headerlink" title="什么是git？"></a>什么是git？</h2><p><strong>git</strong>是一个分步式版本控制软件。  </p><h3 id="什么是分布式版本控制系统？"><a href="#什么是分布式版本控制系统？" class="headerlink" title="什么是分布式版本控制系统？"></a>什么是分布式版本控制系统？</h3><p>假如你在过去使用过<strong>github</strong>或者<strong>gitee</strong>，你将会很容易理解分布式版本控制系统的含义。  </p><p>软件开发者在开发软件的过程中，往往是由一个团队共同进行一个项目的开发。为了能使多个人同时对一个文档进行编辑，就必须将文档上传到网上的一个仓库中。团队里的所有人都能从这个仓库中下载软件代码，同时又能上传经过自己更改后的代码。但是有时候，更改并不一定正确，又或者某个地方出现了严重问题，这时就不得不还原到原来的版本。于是在这个库中，会存留所有已经进行了的更改，和更改前后的各个版本的代码。这时候只需要从库中找到自己原来的版本还原，就可以重新编辑了。</p><p>而分布式的特别之处就是，每个用户都能从远程数据库上将项目克隆下来。这个克隆就是指完完全全的克隆，包括各个版本信息。 </p><p>多个编辑者可以同时在自己的电脑上进行编辑，上传到网上的仓库中，并由仓库进行合并。<br>与分布式相对应的是中心式，显然中心式只允许在将项目保存在中心仓库中，如果人们有需要，就从中下载或更新，但下载得到的只是当前的代码。</p><p>值得一提的是，日志就是一种版本控制，比如你可以在电脑上随便打开知乎的某个问题，就能在问题右下角的<code>···</code>处找到问题日志，查看何人何时何因对问题进行了何种修改。</p><h2 id="为什么叫git"><a href="#为什么叫git" class="headerlink" title="为什么叫git?"></a>为什么叫git?</h2><p>…………………..未完待续<br><del>也许我有必要给我的博客网站添加一个文章日志</del></p><p>5&#x2F;12&#x2F;2022 4:01:38 PM </p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>飞机大战</title>
+    <link href="/2022/05/08/Qt%E5%A4%A7%E4%BD%9C%E4%B8%9A/"/>
+    <url>/2022/05/08/Qt%E5%A4%A7%E4%BD%9C%E4%B8%9A/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Qt  c++大作业.</p><p>网址如下:<br><a href="https://www.bilibili.com/video/BV1sS4y1b7MT/">https://www.bilibili.com/video/BV1sS4y1b7MT/</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>第一篇博客</title>
+    <link href="/2022/05/07/first/"/>
+    <url>/2022/05/07/first/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>欢迎光临</p><p>这是我的第一篇博客，大多数人会写上自己创建博客的过程，我也不例外。</p><p>但是由于时间关系，各种ddl将至。外加由于知识的缺乏，创建过程中基本完全是网上的教程照抄照搬，难以形成自己的理解。 故于此占位，待日后时间充裕，将其补充完整。</p><p>近期将上传我的qt大作业项目报告。全当为博若干年后自己一笑。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>博客建设</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
