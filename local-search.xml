@@ -5,6 +5,19 @@
   
   <entry>
     <title></title>
+    <link href="/2022/10/30/%E6%A8%A1%E7%B3%8A%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF%E7%BB%BC%E8%BF%B0%E5%AD%A6%E4%B9%A0/"/>
+    <url>/2022/10/30/%E6%A8%A1%E7%B3%8A%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF%E7%BB%BC%E8%BF%B0%E5%AD%A6%E4%B9%A0/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="模糊测试技术综述"><a href="#模糊测试技术综述" class="headerlink" title="模糊测试技术综述"></a>模糊测试技术综述</h1><p>模糊测试是漏洞检测技术的一种，通过使用针对目标测试对象生成的随机字符流，对目标程序进行多次测试，以检测可能存在的漏洞。</p><p>目前模糊测试的研究工作集中在提升检测能力和拓展测试应用范围上</p><h2 id="模糊测试"><a href="#模糊测试" class="headerlink" title="模糊测试"></a>模糊测试</h2><h3 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h3><p><img src="https://raw.githubusercontent.com/passer12/imgbed/main/blogimg/uTools_1667098329906.png"></p><h4 id="测试方法的发展"><a href="#测试方法的发展" class="headerlink" title="测试方法的发展"></a>测试方法的发展</h4><p>1988-2004：</p><p>2001：Protos 首次将模糊测试用于网络协议的测试</p><p>2004：Peach 用户手工定义用于生成输入数据的模型，是基于语法生成输入思想的早期应用</p><p>2007： 白盒模糊测试方法Sage，基于程序条件语句对输入的制约，优化输入数据，绕过输入检查</p><p>2008：jsfunfuzz,根据语法模型生成随机但语法正确的输入</p><p>白盒测试效率低，提高效率可继续改进白盒或使用少量信息</p><p>2009：继续改进白盒，Vganesh，污点分析技术</p><p>2013：使用少量目标内部信息，灰盒测试，AFL，进化算法以及设计的突变策略，基于覆盖率为导向</p><h4 id="模糊测试基本工作流程"><a href="#模糊测试基本工作流程" class="headerlink" title="模糊测试基本工作流程"></a>模糊测试基本工作流程</h4><p><img src="https://raw.githubusercontent.com/passer12/imgbed/main/blogimg/uTools_1667112890936.png"></p><p>预处理：收集信息制定模糊分析的策略</p><p>输入构造：由种子生成输入数据</p><p>输入选择：筛选有效的输入数据，适合使用机器学习</p><p>评估：制定合适的实验和合适的评价指标</p><p>结果分析：处理测试结果，发现程序漏洞  </p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
     <link href="/2022/10/30/%E6%B3%A2%E6%B3%A2%E7%BB%AD%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
     <url>/2022/10/30/%E6%B3%A2%E6%B3%A2%E7%BB%AD%E5%B0%8F%E6%B8%B8%E6%88%8F/</url>
     
