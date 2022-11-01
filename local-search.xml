@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>bat批处理自动化运行</title>
+    <link href="/2022/11/01/bat%E6%89%B9%E5%A4%84%E7%90%86%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E8%A1%8C/"/>
+    <url>/2022/11/01/bat%E6%89%B9%E5%A4%84%E7%90%86%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E8%A1%8C/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="bat批处理自动化运行"><a href="#bat批处理自动化运行" class="headerlink" title="bat批处理自动化运行"></a>bat批处理自动化运行</h1><p>每次在本地写完博客后都要hexo clean, hexo generate, hexo deploy三部曲。</p><p>虽然不算麻烦，但突然想起之前部署本地novalai时傻瓜式的一键部署，当时好像执行了个bat后缀的程序吧，还有前几天配置无人机环境是直接调用过一个sh后缀的程序，看来自动化处理是基本操作。</p><h2 id="编写bat脚本"><a href="#编写bat脚本" class="headerlink" title="编写bat脚本"></a>编写bat脚本</h2><p>时间不是很充裕，所以不打算学习更多相关原理再重述了，仅作为一个插曲。</p><p>直接创造bat后缀文件，bat脚本还是有一些非常简单的语法的。这里只用到一个call命令，很好理解，就是调用它之后的指令。</p><p>将以下三句代码写入bat文件。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">call hexo clean<br>call hexo g<br>call hexo d<br></code></pre></td></tr></table></figure><p>保存至博客文件夹下然后双击执行即可。</p><p>当然也可不保存至博客文件夹，但这样就要再开头加上一句<code>cd  你的博客路径</code>才行，执行脚本的目录默认为它所在目录。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>杂项</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>kali tools学习</title>
     <link href="/2022/10/30/%E4%B8%80%E5%A4%A9%E5%87%A0%E4%B8%AAkali%20tool/"/>
     <url>/2022/10/30/%E4%B8%80%E5%A4%A9%E5%87%A0%E4%B8%AAkali%20tool/</url>
