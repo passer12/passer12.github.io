@@ -16,24 +16,21 @@
   <meta name="author" content="兴趣使然">
   <meta name="keywords" content="">
   
-    <meta name="description" content="bat批处理自动化运行每次在本地写完博客后都要hexo clean, hexo generate, hexo deploy三部曲。 虽然不算麻烦，但突然想起之前部署本地novalai时傻瓜式的一键部署，当时好像执行了个bat后缀的程序吧，还有前几天配置无人机环境是直接调用过一个sh后缀的程序，看来自动化处理是基本操作。 编写bat脚本时间不是很充裕，所以不打算学习更多相关原理再重述了，仅作为一个插">
+    <meta name="description" content="[toc] python大作业学习中的小知识点csv文件简介csv为Comma-Separated Value的缩写,不指定字符编码，是被\r\n的行分隔符和逗号或tab的列分隔符分成行和列的文本文件，每一行被成为一条记录。 baseline基准线，基准模型，在此基准上训练自己的模型 tokenizer分词器。 为了将原始文本转化为数值型字符给计算机处理，将句子分成很多个单词，每个句子就是一个词向">
 <meta property="og:type" content="article">
-<meta property="og:title" content="bat批处理自动化运行">
-<meta property="og:url" content="http://interestcausesthis.com/2022/11/01/bat%E6%89%B9%E5%A4%84%E7%90%86%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E8%A1%8C/index.html">
+<meta property="og:title" content="兴趣使然">
+<meta property="og:url" content="http://interestcausesthis.com/2022/11/10/python%E5%A4%A7%E4%BD%9C%E4%B8%9A%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9/index.html">
 <meta property="og:site_name" content="兴趣使然">
-<meta property="og:description" content="bat批处理自动化运行每次在本地写完博客后都要hexo clean, hexo generate, hexo deploy三部曲。 虽然不算麻烦，但突然想起之前部署本地novalai时傻瓜式的一键部署，当时好像执行了个bat后缀的程序吧，还有前几天配置无人机环境是直接调用过一个sh后缀的程序，看来自动化处理是基本操作。 编写bat脚本时间不是很充裕，所以不打算学习更多相关原理再重述了，仅作为一个插">
+<meta property="og:description" content="[toc] python大作业学习中的小知识点csv文件简介csv为Comma-Separated Value的缩写,不指定字符编码，是被\r\n的行分隔符和逗号或tab的列分隔符分成行和列的文本文件，每一行被成为一条记录。 baseline基准线，基准模型，在此基准上训练自己的模型 tokenizer分词器。 为了将原始文本转化为数值型字符给计算机处理，将句子分成很多个单词，每个句子就是一个词向">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/passer12/imgbed/main/blogimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20221006143323.jpg">
-<meta property="article:published_time" content="2022-11-01T01:19:31.522Z">
-<meta property="article:modified_time" content="2022-11-01T01:39:02.693Z">
+<meta property="article:published_time" content="2022-11-10T15:31:04.365Z">
+<meta property="article:modified_time" content="2022-11-10T14:46:35.273Z">
 <meta property="article:author" content="兴趣使然">
-<meta property="article:tag" content="杂项">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/passer12/imgbed/main/blogimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20221006143323.jpg">
   
   
   
-  <title>bat批处理自动化运行 - 兴趣使然</title>
+  <title>兴趣使然</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +193,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="bat批处理自动化运行"></span>
+            <span id="subtitle" data-typed-text=""></span>
           
         </div>
 
@@ -207,8 +204,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-01 09:19" pubdate>
-          2022年11月1日 上午
+        <time datetime="2022-11-10 23:31" pubdate>
+          2022年11月10日 晚上
         </time>
       </span>
     
@@ -219,7 +216,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          376 字
+          2.2k 字
         
       </span>
     
@@ -230,7 +227,7 @@
         
         
         
-          4 分钟
+          18 分钟
         
       </span>
     
@@ -268,19 +265,55 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">bat批处理自动化运行</h1>
+            <h1 style="display: none"></h1>
             
             <div class="markdown-body">
               
-              <h1 id="bat批处理自动化运行"><a href="#bat批处理自动化运行" class="headerlink" title="bat批处理自动化运行"></a>bat批处理自动化运行</h1><p>每次在本地写完博客后都要hexo clean, hexo generate, hexo deploy三部曲。</p>
-<p>虽然不算麻烦，但突然想起之前部署本地novalai时傻瓜式的一键部署，当时好像执行了个bat后缀的程序吧，还有前几天配置无人机环境是直接调用过一个sh后缀的程序，看来自动化处理是基本操作。</p>
-<h2 id="编写bat脚本"><a href="#编写bat脚本" class="headerlink" title="编写bat脚本"></a>编写bat脚本</h2><p>时间不是很充裕，所以不打算学习更多相关原理再重述了，仅作为一个插曲。</p>
-<p>直接创造bat后缀文件，bat脚本还是有一些非常简单的语法的。这里只用到一个call命令，很好理解，就是调用它之后的指令。</p>
-<p>将以下三句代码写入bat文件。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">call hexo clean<br>call hexo g<br>call hexo d<br></code></pre></td></tr></table></figure>
-
-<p>保存至博客文件夹下然后双击执行即可。</p>
-<p>当然也可不保存至博客文件夹，但这样就要再开头加上一句<code>cd  你的博客路径</code>才行，执行脚本的目录默认为它所在目录。</p>
+              <p>[toc]</p>
+<h1 id="python大作业学习中的小知识点"><a href="#python大作业学习中的小知识点" class="headerlink" title="python大作业学习中的小知识点"></a>python大作业学习中的小知识点</h1><h2 id="csv文件"><a href="#csv文件" class="headerlink" title="csv文件"></a>csv文件</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>csv为Comma-Separated Value的缩写,不指定字符编码，是被<code>\r\n</code>的行分隔符和<code>逗号或tab</code>的列分隔符分成行和列的文本文件，每一行被成为一条记录。</p>
+<h2 id="baseline"><a href="#baseline" class="headerlink" title="baseline"></a>baseline</h2><p>基准线，基准模型，在此基准上训练自己的模型</p>
+<h2 id="tokenizer"><a href="#tokenizer" class="headerlink" title="tokenizer"></a>tokenizer</h2><p>分词器。</p>
+<p>为了将原始文本转化为数值型字符给计算机处理，将句子分成很多个单词，每个句子就是一个词向量。</p>
+<p>分词器进行地就是这个过程</p>
+<p>分词器的编码器返回三个值作为bert模型的三个输入。</p>
+<h2 id="tqdm"><a href="#tqdm" class="headerlink" title="tqdm"></a>tqdm</h2><p>一个进度条库，用于展示进度</p>
+<p>参考<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/163613814">python进度条库tqdm详解 - 知乎 (zhihu.com)</a></p>
+<h2 id="基于pytorch的bert分类文本代码"><a href="#基于pytorch的bert分类文本代码" class="headerlink" title="基于pytorch的bert分类文本代码"></a>基于pytorch的bert分类文本代码</h2><p>文章地址<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112655246">9102年，再不会用bert就out了，看这篇基于pytorch的bert文本分类的完整代码 - 知乎 (zhihu.com)</a></p>
+<p>打算从中学习到一种文本分类的流程</p>
+<h3 id="0-必要的准备，包括模型的下载和各种库的下载"><a href="#0-必要的准备，包括模型的下载和各种库的下载" class="headerlink" title="0.必要的准备，包括模型的下载和各种库的下载"></a>0.必要的准备，包括模型的下载和各种库的下载</h3><h3 id="1-对中文数据集进行预处理"><a href="#1-对中文数据集进行预处理" class="headerlink" title="1.对中文数据集进行预处理"></a>1.对中文数据集进行预处理</h3><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/53277723">NLP入门– 文本预处理Pre-processing - 知乎 (zhihu.com)</a></p>
+<p> 数据集是预先收集好的用于训练的数据。</p>
+<h4 id="1-1去除数据中的非文本内容"><a href="#1-1去除数据中的非文本内容" class="headerlink" title="1.1去除数据中的非文本内容"></a>1.1去除数据中的非文本内容</h4><p>通常情况下，数据的来源纷多，其中可能夹杂很多与文本内容无关的符号。要将它们清除。而在大作业提供的数据中已经去除了这些内容，唯一需要注意的大概就只有csv文件的本身格式问题了。</p>
+<h4 id="1-2分词"><a href="#1-2分词" class="headerlink" title="1.2分词"></a>1.2分词</h4><p>正如前面所说，为了将文本句子转化为计算机看得到的数值型字符，我们要将文本转化为词向量。而这个过程就是靠<strong>分词器</strong>完成。可以使用中文分词器<a target="_blank" rel="noopener" href="https://github.com/fxsjy/jieba">结巴</a>来完成。</p>
+<h4 id="1-3去掉停用词"><a href="#1-3去掉停用词" class="headerlink" title="1.3去掉停用词"></a>1.3去掉停用词</h4><p>的，了之类的词语应该去掉。通过构建停用词表或者利用现成的词表，将已经<strong>分好的分词</strong>中的停用词去掉。</p>
+<h4 id="1-4特征处理"><a href="#1-4特征处理" class="headerlink" title="1.4特征处理"></a>1.4特征处理</h4><p>完成以上步骤文本基本是干净的了，可调用sklearn对我们文本特征进行处理。</p>
+<p>常用的方法有词袋模型（bag of words)、n-gram语言模型、word2vec分布式模型.</p>
+<p>三者的特征从名字上看就非常明显，词袋统计词出现的频率，不考虑顺序；n-gram则考虑顺序；word2vec将文章的<strong>词</strong>映射到一个固定长度的连续向量。</p>
+<h4 id="1-5利用其思考如何建立分析模型"><a href="#1-5利用其思考如何建立分析模型" class="headerlink" title="1.5利用其思考如何建立分析模型"></a>1.5利用其思考如何建立分析模型</h4><p>特征向量都已经出来了，可以利用它们进行分类模型的建立了。</p>
+<h3 id="2-切分训练集、验证集和测试集"><a href="#2-切分训练集、验证集和测试集" class="headerlink" title="2.切分训练集、验证集和测试集"></a>2.切分训练集、验证集和测试集</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/haoji007/article/details/106165488">python划分训练集、验证集和测试集</a></p>
+<p>一般情况下得到了一个数据集，用它来训练模型。为了判断自己的训练结果是否有效，所有我们还要把它划分开，一部分作为训练用的，其他部分作文验证集和测试集。</p>
+<p>大作业数据貌似也已经帮我们分好了。</p>
+<h3 id="3-加载到pytorch的DataLoader"><a href="#3-加载到pytorch的DataLoader" class="headerlink" title="3.加载到pytorch的DataLoader"></a>3.加载到pytorch的DataLoader</h3><p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/2072266">Pytorch中DataLoader的使用,腾讯云开发者社区</a></p>
+<p>pytorch如何使用我们的数据集？用DataLoader获取我们的数据和参数，拿到模型中去反复循环训练。</p>
+<h3 id="4-定义bert模型"><a href="#4-定义bert模型" class="headerlink" title="4.定义bert模型"></a>4.定义bert模型</h3><p>定义一个模型，</p>
+<h3 id="5-实例化模型"><a href="#5-实例化模型" class="headerlink" title="5.实例化模型"></a>5.实例化模型</h3><p>传入参数，实例化</p>
+<h3 id="6-定义优化器"><a href="#6-定义优化器" class="headerlink" title="6.定义优化器"></a>6.定义优化器</h3><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/261695487">优化器(Optimizer) - 知乎 (zhihu.com)</a></p>
+<p>我们利用测试集进行反向传播，也就是减小损失函数的过程中，需要一个规则控制各种参数的调整以使得损失函数逼近最小。这个规则就是优化器。</p>
+<h3 id="7-定义训练函数和验证测试函数"><a href="#7-定义训练函数和验证测试函数" class="headerlink" title="7.定义训练函数和验证测试函数"></a>7.定义训练函数和验证测试函数</h3><h3 id="8-开始训练和验证模型"><a href="#8-开始训练和验证模型" class="headerlink" title="8.开始训练和验证模型"></a>8.开始训练和验证模型</h3><p>一条语句就开始执行了。</p>
+<h3 id="9-加载最优模型对测试集进行测试"><a href="#9-加载最优模型对测试集进行测试" class="headerlink" title="9.加载最优模型对测试集进行测试"></a>9.加载最优模型对测试集进行测试</h3><p>通过以上的训练后，我们将得到一个最优的模型，利用<strong>测试集？</strong>对这个模型进行测试，将返回评估模型准确度的几个值。这就时最终结果。</p>
+<p>当然最后我们得到了训练的模型，可以用它来实现判断一条新闻的真假。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>我们打算用pytorch和bert模型进行文本分类的模型训练。我们很容易已满足接下来所需要的一切环境。</p>
+<p>首先我们需要获取数据集，方式有很多种，购买？互联网搜集？爬虫？亦或是老师提供的现成。</p>
+<p>数据集可能并不满足我们的需要，我可不想新闻里有一堆的html标签，因此首先进行数据清洗，去除无关的数据。接下来，为了将文本转化为计算机可用数据，利用分词器进行分词。可是分出来的词中有一大堆的了么呢，这些我也不想要，就要利用停用词表把它们从分词中去除。很好，现在的数据已经提取成了一个个词了。接下就是将这些词编码，并把句子转化为以它们为基的向量。而这个转化过程已经有了现成的方法。利用sklearn，有bagOfWord、n-gram、word2vec等常见的方法，考虑哪种最有效。好了，成功获得了提取出特征向量之后的数据。</p>
+<p>接下来，我们深谋远虑一番，为了能验证自己的结果正误，从数据集种选出一部分来作为测试集和验证集，分别用来计算损失函数进行反向传播优化模型和验证最后的模型结果。</p>
+<p>数据那么多，怎么训练呢，写个循环函数或许是个办法。pytorch是个很好的工具，利用它的DataLoader将数据拿到模型中去反复训练。</p>
+<p>好了，是时候考虑我们的模型了，利用先有的预训练模型和各种库，简单的定义一个模型。</p>
+<p>把参数传入它，将它实例化。</p>
+<p>开始训练吗？稍等，容我加个优化器，优化反向传播的损失函数，进一步优化模型。</p>
+<p>定义个训练函数和验证测试函数，正好是正向和反向。</p>
+<p>好了，万事具备，两行简单代码，模型开始训练。</p>
+<p>经过了风扇转的这几分钟，损失函数被不断优化，看样子效果挺好。</p>
+<p>加载最终模型结果进行测试集的测试，看看各种参数如何。</p>
+<p>结束。当然你还可以在此基础上做点别的东西，比如弄个api之类的。</p>
 
               
             </div>
@@ -288,13 +321,6 @@
             <div>
               <div class="post-metas my-3">
   
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/%E6%9D%82%E9%A1%B9/">#杂项</a>
-      
-    </div>
   
 </div>
 
@@ -304,8 +330,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>bat批处理自动化运行</div>
-      <div>http://interestcausesthis.com/2022/11/01/bat批处理自动化运行/</div>
+      <div></div>
+      <div>http://interestcausesthis.com/2022/11/10/python大作业学习中的小知识点/</div>
     </div>
     <div class="license-meta">
       
@@ -317,7 +343,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年11月1日</div>
+          <div>2022年11月10日</div>
         </div>
       
       
@@ -347,18 +373,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/11/05/writeup/" title="">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/10/30/%E4%B8%80%E5%A4%A9%E5%87%A0%E4%B8%AAkali%20tool/" title="kali tools学习">
-                        <span class="hidden-mobile">kali tools学习</span>
+                      <a href="/2022/11/05/writeup/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -379,7 +399,7 @@
         var options = Object.assign(
           {"clientID":"91810b85c3e155c3b463","clientSecret":"c068ec1f588a0c185794e5539c34ca78f2689d80","repo":"blogcomment","owner":"passer12","admin":["passer12"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
           {
-            id: '896c889d714b470bb7f9c74b5f3d1467'
+            id: 'ce604296bab430ba140910314e5d3305'
           }
         )
         var gitalk = new Gitalk(options);
