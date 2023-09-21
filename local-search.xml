@@ -4,9 +4,35 @@
   
   
   <entry>
+    <title>好久不见</title>
+    <link href="/2023/09/21/newblog/"/>
+    <url>/2023/09/21/newblog/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="好久不久"><a href="#好久不久" class="headerlink" title="好久不久"></a>好久不久</h2><p>已经半年没有上传博客了，这当然不是因为我这半年啥都没写，我其实还写了挺多笔记的。</p><p>原因也没几个，一个是懒，倒不如说带来的反馈不足以克服我的懒惰。建立博客之初写的挺多，因为有点新鲜感，时间久了也就流于普通。</p><p>然后加上自己技术确实不行，没什么有价值的东西可写。</p><p>再有就是大三了，确实太忙了。</p><p>………</p><p>当然我还是会继续更的，偶尔，大概。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>51journey</title>
+    <link href="/2023/05/03/5-1journey/"/>
+    <url>/2023/05/03/5-1journey/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="5-1journey"><a href="#5-1journey" class="headerlink" title="5-1journey"></a>5-1journey</h1><p>五天假期要结束了，可是回过头来看，一时间理不清自己到底学了什么东西，但是我确实学到很多，虽然很多时候仅仅是在消遣的看视频。利用浏览器的历史记录梳理一下这五天我所学的</p><h1 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h1><p>学会了使用<strong>枚举工具</strong>，发现网页隐藏子页面，工具有dirsearch,gobuster,dirb等等</p><p>kali中的<strong>字典</strong>存储在&#x2F;usr&#x2F;share&#x2F;wordlist中</p><p>主要还是参加了一个ctf比赛，虽然只看了一题，但是毕竟是有oops,null这样的大佬的队伍的比赛。唯一看到那题是readfile，至今没有找到writeup</p><p>了解到了linux中的几个重要文件，例如&#x2F;etc&#x2F;passwd,&#x2F;etc&#x2F;shadow,&#x2F;pro&#x2F;…………</p><p>暂时了解到了文件包含和路径遍历漏洞</p><p>使用<strong>python的mysql库</strong>将mysql和python连接起来</p><p>了解到了一些ctf网站，例如ctftime,buuctf,一些ctf比赛，例如realworld</p><p>跟着视频云了一下<strong>skynet</strong>虚拟机,学到很多东西</p><p>使用<strong>nikto</strong>自动扫描漏洞</p><p><strong>num4linux</strong>自动查看是否具有samba服务等漏洞</p><p>使用本地文件包含漏洞上传<strong>reverse_shell.php</strong>获得reverse_shell包括netcat的一些小知识</p><p><strong>linpeas.sh</strong>自动查看是否有提权漏洞</p><p><strong>通配符漏洞</strong>以及利用提权方式</p><h1 id="第二天"><a href="#第二天" class="headerlink" title="第二天"></a>第二天</h1><p>了解了一些数据库和网页的东西，但没有形成什么记忆。产生了做一个王者信息查询系统的想法。</p><p>更加了解了suid和sgid,以及linux下的权限设置。</p><p>通过了tryHackme contend discovery房间，强化记忆了一些收集信息的方法。</p><p>完成了简单的rootme房间，这个倒是自己完成，受益匪浅。实际利用的只有<strong>文件上传漏洞和suid提权，以及phtml和php的区别</strong></p><p>更加深入的了解了<strong>find</strong>命令，发现了一堆cheatsheet</p><p>之前报的比赛基本以及结束，去看了各个队伍的官方网站和博客</p><h1 id="第三天"><a href="#第三天" class="headerlink" title="第三天"></a>第三天</h1><p>搜了好久writeup都没找到antctf的题解，但是倒是发现了oops的官方网站，是一个利用cli.html制作的类终端界面，使用上上下下左右左右ba作弊码获得flag所在网址然后进行base64和brainfuck解密，妈的绝赞。尤其是作弊码，真的是惊艳到我了，不过要是之间拔下来源码再源码里找到flag网址这个乐趣可能就错过了。</p><p>注册机音乐！真的太酷啦，好可惜到了大二下才开始真正开始学习计算机，错过了那么多东西。</p><p>更加深入的学习了一下<strong>sql注入</strong></p><p>重新看了一下<strong>kioptrix1.0</strong>，现在基本已经理解writeup了</p><p>发现<strong>shodan!!</strong> 黑客搜索引擎，结果他妈的瞎点直接进色情网站了，麻了</p><h1 id="第四天"><a href="#第四天" class="headerlink" title="第四天"></a>第四天</h1><p>免费的tryhackme已经学的差不多了，打算付费订阅，但是接下来的时间挺尴尬，大作业复习等等可能会耗费太多时间，所以还是先不订阅，比较一月70块还挺贵的。同时也看了下hackthebox，真是没钱寸步难行&#x2F;(ㄒoㄒ)&#x2F;~~</p><p>这一天也没去图书馆教学楼，在宿舍呆了一天，毕竟昨晚看king of hill到2点多，然后一个上午就被白费了。</p><p>然后受昨晚视频启发，又学了很多新东西</p><p>包括<strong>terminator,shellshock,linux重定向,以及&#x2F;dev&#x2F;tcp&#x2F;$host&#x2F;$port文件夹</strong></p><p>也了解了<strong>tty</strong>,在别的终端内输入东西。利用<strong>tmux在别人的shell</strong>写东西，nullr0ute哈哈哈，太快乐了他们</p><p><strong>拓宽了点视野</strong>，其实国内也有挺多学习资源的</p><h1 id="第五天"><a href="#第五天" class="headerlink" title="第五天"></a>第五天</h1><p>就是今天了，睡到11点。。。没什么好说的</p><p>看了一些渗透测试工具，其实只有<strong>hybra</strong>,利用字典爆破ssh等</p><p><strong>姑且算是不虚这五天，更加后悔之前的假期都被浪费了，更加感到自己和别人的差距。</strong></p><p>不过我很高兴的发现，自己至少在这几天是时刻充满乐趣的，就像玩游戏。真的就像是游戏。</p><blockquote><p>至少确保, have fun with it</p></blockquote>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>vmware中的网络</title>
-    <link href="/2023/04/17/draft/vmware%E4%B8%AD%E7%9A%84Bridge(%E6%A1%A5%E6%8E%A5),host-only%EF%BC%88%E4%BB%85%E4%B8%BB%E6%9C%BA%EF%BC%89,NAT%E7%A9%B6%E7%AB%9F%E5%88%86%E5%88%AB%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F/"/>
-    <url>/2023/04/17/draft/vmware%E4%B8%AD%E7%9A%84Bridge(%E6%A1%A5%E6%8E%A5),host-only%EF%BC%88%E4%BB%85%E4%B8%BB%E6%9C%BA%EF%BC%89,NAT%E7%A9%B6%E7%AB%9F%E5%88%86%E5%88%AB%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F/</url>
+    <link href="/2023/04/17/vmware%E4%B8%AD%E7%9A%84Bridge(%E6%A1%A5%E6%8E%A5),host-only%EF%BC%88%E4%BB%85%E4%B8%BB%E6%9C%BA%EF%BC%89,NAT%E7%A9%B6%E7%AB%9F%E5%88%86%E5%88%AB%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F/"/>
+    <url>/2023/04/17/vmware%E4%B8%AD%E7%9A%84Bridge(%E6%A1%A5%E6%8E%A5),host-only%EF%BC%88%E4%BB%85%E4%B8%BB%E6%9C%BA%EF%BC%89,NAT%E7%A9%B6%E7%AB%9F%E5%88%86%E5%88%AB%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="vmware中的Bridge-桥接-host-only（仅主机）-NAT究竟分别代表什么意思？"><a href="#vmware中的Bridge-桥接-host-only（仅主机）-NAT究竟分别代表什么意思？" class="headerlink" title="vmware中的Bridge(桥接),host-only（仅主机）,NAT究竟分别代表什么意思？"></a>vmware中的Bridge(桥接),host-only（仅主机）,NAT究竟分别代表什么意思？</h2><p>绝对安全的虚拟机本该是绝对隔离的，但是为了满足用户在虚拟机上网的需要，vmware提供了以下三种联网方式。图片描述非常清晰了。</p><p><img src="/../typora_img/image-20230417202241587.png" alt="image-20230417202241587"></p><p><img src="/../typora_img/image-20230417202054305.png" alt="image-20230417202054305"></p><p><img src="/../typora_img/image-20230417202104581.png" alt="image-20230417202104581"></p><p>这里的❌表示无法连接互联网。</p><p><img src="/../typora_img/image-20230417202301690.png" alt="image-20230417202301690"></p><p>…………</p><p>但是在这之后折腾了一晚上也没在kali虚拟机上用上我的wifi的桥接模式，在kali上安装网卡也触发未知错误，解决无望，只能读档了。目前想让kali直接连接到无线网络的方法好像就只有买一个usb无线网卡，也可能是因为我计算机网络知识确实太匮乏了。</p><hr><p>在再次经历过数个小时的折腾，网上一般的解决方法我都尝试了，均无果，一种主流解决方案是在vmware的虚拟网络设置器中将桥接模式对应的虚拟网络net0的要桥接的适配器从自动更改为实体电脑连接到wifi所使用的适配器。在网上这种方法一般都能解决，然而对于我仍然失败。</p><p>正当我打算转战virtual box之时，试了下连接手机热点。结果kali上他喵地秒连接上了。</p><p>换回校园网仍然不行。确定问题是出现在校园网上了。</p><p>难道是因为我没认证？可是我在kali上压根完全没有连接上，又怎么能到达认证页呢？</p><p>又在网上搜索了一圈仍然没有合适的解决方案，难道只能每个usb无线驱动器或者用手机热点了吗&#x2F;(ㄒoㄒ)&#x2F;~~</p><p>不过之后诞生疑问，当我在kali使用NAT模式，而在kioptrix靶机上使用Bridge模式时，却能使用netdiscover发现靶机的ip地址，这不禁令人疑惑。</p>]]></content>
     
@@ -18,8 +44,8 @@
   
   <entry>
     <title></title>
-    <link href="/2023/04/02/draft/coursera%E8%AF%BE%E7%A8%8B%E5%8A%A9%E5%AD%A6%E9%87%91%E7%94%B3%E8%AF%B7/"/>
-    <url>/2023/04/02/draft/coursera%E8%AF%BE%E7%A8%8B%E5%8A%A9%E5%AD%A6%E9%87%91%E7%94%B3%E8%AF%B7/</url>
+    <link href="/2023/04/02/coursera%E8%AF%BE%E7%A8%8B%E5%8A%A9%E5%AD%A6%E9%87%91%E7%94%B3%E8%AF%B7/"/>
+    <url>/2023/04/02/coursera%E8%AF%BE%E7%A8%8B%E5%8A%A9%E5%AD%A6%E9%87%91%E7%94%B3%E8%AF%B7/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="助学金申请内容"><a href="#助学金申请内容" class="headerlink" title="助学金申请内容"></a>助学金申请内容</h2><p>coursera是一个相当知名的慕课网站，但是有些课程的证书或者测验需要付费，它很人性化地提供了学生助学金计划，基本申请都能过。这是我的申请内容模板。</p><p>My goal is to become an expert in the field of machine learning so that I can solve more and more challenging questions in this field and make a valuable contribution to society. Additionally, I hope to repay my parents for their hard work in supporting my education and life.</p><p>This course will help me gain a deeper understanding of advanced learning algorithms, which will play a crucial role in the field of machine learning. It is important to have a solid foundation in order to succeed and thrive in any field, and I believe that this course will provide me with the necessary knowledge and skills to solve increasingly complex problems in machine learning.</p><p>Through this effort, I hope to achieve my dream of becoming a highly skilled machine learning expert and improve the quality of life for both myself and my family. I am committed to working hard towards this goal and thank you for your support.</p><p><img src="/../typora_img/image-20230418222041232.png" alt="image-20230418222041232"></p>]]></content>
     
