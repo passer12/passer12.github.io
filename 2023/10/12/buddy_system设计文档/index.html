@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="求知若渴，虚怀若谷">
+    <meta name="author" content="兴趣使然">
+    
+    <title>
+        
+            buddy_system：ucore实现 |
+        
+        兴趣使然
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/img/avater.jpeg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"interestcausesthis.com","root":"/","language":"zh-CN"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"style":{"primary_color":"#0066cc","logo":"/img/avater.jpeg","favicon":"/img/avater.jpeg","avatar":"/img/avater.jpeg","first_screen":{"enable":true,"background_img":"/img/bg.svg","description":"此情可待成追忆，只是当时已惘然","hitokoto":true},"scroll":{"progress_bar":false,"percent":false}},"local_search":{"enable":false,"preload":false},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null}},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":false,"page_pv":true}},"version":"3.8.4"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container border-box">
+
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/img/avater.jpeg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               兴趣使然
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+
+                
+
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+
+        <div class="article-content-container border-box">
+
+            
+
+            <div class="article-content-bottom border-box">
+                
+                    <div class="article-title">
+                        buddy_system：ucore实现
+                    </div>
+                
+
+                
+                    <div class="article-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/img/avater.jpeg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author">
+                                <span class="name">兴趣使然</span>
+                                
+                                    <span class="author-label">Lv3</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="article-meta-info-container border-box post">
+    <div class="article-meta-info border-box">
+        
+
+
+        
+            <span class="meta-info-item article-create-date">
+                <i class="icon fa-solid fa-calendar-check"></i>&nbsp;
+                <span class="pc">2023-10-12 22:03:15</span>
+                <span class="mobile">2023-10-12 22:03</span>
+            </span>
+
+            <span class="meta-info-item article-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="pc" data-updated="Thu Oct 12 2023 23:33:40 GMT+0800">2023-10-12 23:33:40</span>
+            </span>
+        
+
+        
+
+        
+
+        
+        
+        
+        
+            <span class="meta-info-item article-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="article-content keep-markdown-body">
+                    
+
+                    <h2 id="buddy-system设计文档"><a href="#buddy-system设计文档" class="headerlink" title="buddy_system设计文档"></a>buddy_system设计文档</h2><h2 id="省流版"><a href="#省流版" class="headerlink" title="省流版"></a>省流版</h2><p>简单来说，就是参考  <a class="link"   target="_blank" rel="noopener" href="https://coolshell.cn/articles/10427.html" >伙伴分配器的一个极简实现 <i class="fas fa-external-link-alt"></i></a> 这个的实现</p>
+<p>移除free_list,增加一个longest数组。利用longest数组的值代替page的property、flag和free_list来代表page的状态。</p>
+<h2 id="具体版"><a href="#具体版" class="headerlink" title="具体版"></a>具体版</h2><h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><p>原first-fit和best-fit利用一个free_list链表链接所有空闲的页，用pages结构体的属性代表pages的状态，分配时直接卸下并返回对应pages的地址，释放时将对应pages链接进freelist。</p>
+<p>我们的buddy_system舍弃free_list链表，但是并不舍弃pages结构体，因为需要通过pages结构体找到对应的内存地址。新建一个longest数组存储节点可用空间大小，作为内存分配器来判断页的状态并进行分配。分配和释放都直接在longest数组中修改值即可。</p>
+<p>初始化的数据结构如下</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Page</span> *<span class="title">pageshead</span> =</span> <span class="literal">NULL</span>; <span class="comment">//一个页指针，初始化时为之赋值为空闲块的页首</span></span><br><span class="line"><span class="type">unsigned</span> size = <span class="number">0</span>;        	   <span class="comment">//总的页块大小，初始化时为其赋值</span></span><br><span class="line"><span class="type">unsigned</span> longest[<span class="number">32768</span>];  	   <span class="comment">//内存分配器，因为页表大小为31897，我们最多申请								   //16384，必须为2的次幂。</span></span><br><span class="line"><span class="type">unsigned</span> nr_free;        	   <span class="comment">//总的可分配页块大小</span></span><br><span class="line"><span class="type">unsigned</span> *self = longest; 	   <span class="comment">//指向longest的指针</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="辅助工具"><a href="#辅助工具" class="headerlink" title="辅助工具"></a>辅助工具</h3><p>定义一些工具函数方便后续使用。</p>
+<p>包括求当前节点的左叶，右叶，父节点，<br>判断是否为2的次幂，向上调整为2的次幂</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> LEFT_LEAF(index) ((index) * 2 + 1)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> RIGHT_LEAF(index) ((index) * 2 + 2)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PARENT(index) (((index) + 1) / 2 - 1)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> IS_POWER_OF_2(x) (!((x) &amp; ((x)-1)))</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAX(a, b) ((a) &gt; (b) ? (a) : (b))</span></span><br><span class="line"><span class="type">static</span> <span class="type">unsigned</span> <span class="title function_">fixsize</span><span class="params">(<span class="type">unsigned</span> size)</span></span><br><span class="line">&#123;</span><br><span class="line">    size |= size &gt;&gt; <span class="number">1</span>;</span><br><span class="line">    size |= size &gt;&gt; <span class="number">2</span>;</span><br><span class="line">    size |= size &gt;&gt; <span class="number">4</span>;</span><br><span class="line">    size |= size &gt;&gt; <span class="number">8</span>;</span><br><span class="line">    size |= size &gt;&gt; <span class="number">16</span>;</span><br><span class="line">    <span class="keyword">return</span> size + <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="buddy初始化"><a href="#buddy初始化" class="headerlink" title="buddy初始化"></a>buddy初始化</h3><p>do nothing</p>
+<h3 id="buddy初始化分配内存"><a href="#buddy初始化分配内存" class="headerlink" title="buddy初始化分配内存"></a>buddy初始化分配内存</h3><p>实现传入base页地址和申请空间大小，初始化buddy的内存分配器</p>
+<p>这部分主要完成两方面的设置</p>
+<h4 id="1-pages数组的维护："><a href="#1-pages数组的维护：" class="headerlink" title="1.pages数组的维护："></a>1.pages数组的维护：</h4><p>pages数组数据结构定义如下。<br>对于我们目前的buddy_system而言，page存在的唯一作用就是提供一个索引真实地址的功能。<br>为了后续可能的使用，我们仍然维护Page的flag和property属性。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Page</span> &#123;</span></span><br><span class="line">    <span class="type">int</span> ref;                        <span class="comment">// page frame&#x27;s reference counter</span></span><br><span class="line">    <span class="type">uint64_t</span> flags;                 <span class="comment">// array of flags that describe the status of the page frame</span></span><br><span class="line">    <span class="type">unsigned</span> <span class="type">int</span> property;          <span class="comment">// the num of free block, used in first fit pm manager</span></span><br><span class="line">    <span class="type">list_entry_t</span> page_link;         <span class="comment">// free list link</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>具体做法就是将申请空间的除了页首的所有页的flag和property都设置为0，将页首flag设置为1，property设置为空闲的空间大小。</p>
+<h4 id="2-内存分配器-longest数组"><a href="#2-内存分配器-longest数组" class="headerlink" title="2. 内存分配器 longest数组"></a>2. 内存分配器 longest数组</h4><p>buddy_system要求初始化的空间必须是2的次幂。可以通过在函数内将申请空间大小转化为2的次幂，或是直接强制要求参数n必须是2的次幂。我们选择第二种。为此，需要在<code>pmm.c</code>中将调用<code>init_memmap</code>时的参数修改。将之修改为小于原申请大小的最大2的次幂。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">    <span class="keyword">if</span> (freemem &lt; mem_end)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// cprintf(&quot;%d\n&quot;, (mem_end - mem_begin) / PGSIZE); 31897</span></span><br><span class="line">        init_memmap(pa2page(mem_begin), fixsize_down((mem_end - mem_begin) / PGSIZE));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对于longest数组的调整，按顺序遍历数组，相当于层次遍历的方法遍历完全二叉树，依次设置即可。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">2</span> * n - <span class="number">1</span>; ++i) <span class="comment">// 为longest数组分配数值</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (IS_POWER_OF_2(i + <span class="number">1</span>))</span><br><span class="line">        node_size /= <span class="number">2</span>;</span><br><span class="line">    self[i] = node_size;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="buddy申请页"><a href="#buddy申请页" class="headerlink" title="buddy申请页"></a>buddy申请页</h3><p>传入参数n表示申请的页块大小，返回对应空间页的地址。</p>
+<p>参数n的要求：要求大于0，小于等于空闲空间。不需要是2的次幂，我们将会自动向上调整为2的次幂。</p>
+<p>具体寻找方法为先序遍历longest数组。找到第一个大于要求空间的空闲页块，作为分配。然后反向调整longest数组的数值。</p>
+<h4 id="先序遍历："><a href="#先序遍历：" class="headerlink" title="先序遍历："></a>先序遍历：</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (node_size = size; node_size != n; node_size /= <span class="number">2</span>) <span class="comment">// 具体分配过程，最终得到一个index，就是要分配的页</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (self[LEFT_LEAF(index)] &gt;= n &amp;&amp; self[LEFT_LEAF(index)] &lt;= self[RIGHT_LEAF(index)])</span><br><span class="line">        index = LEFT_LEAF(index);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        index = RIGHT_LEAF(index);</span><br><span class="line">&#125;</span><br><span class="line">offset = (index + <span class="number">1</span>) * node_size - size;</span><br></pre></td></tr></table></figure>
+
+<p>index指的是在longest数组中的位置，offset指的是在page数组中的位置。<br>二者有一个对应转化关系。</p>
+<p><img src="/../img/buddy_system%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E4%BC%99%E4%BC%B4%E5%88%86%E9%85%8D%E5%99%A8.jpg" alt="伙伴分配器"></p>
+<h4 id="反向调整"><a href="#反向调整" class="headerlink" title="反向调整"></a>反向调整</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (index)              <span class="comment">// 反向更新self中的longest，</span></span><br><span class="line">&#123;</span><br><span class="line">    index = PARENT(index);</span><br><span class="line">    self[index] =</span><br><span class="line">        MAX(self[LEFT_LEAF(index)], self[RIGHT_LEAF(index)]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="buddy释放页"><a href="#buddy释放页" class="headerlink" title="buddy释放页"></a>buddy释放页</h3><p>传入参数为被释放的页地址和释放的大小。<br>这里释放页的大小事实上并没有用处，因为我们要求被释放的页块必须是被分配的页块，而不能实现分配了4个页，释放2个页的情况。</p>
+<p>释放过程主要是longest数组的数值更改，找到当初分配的时候的节点，更改它的值即可。<br>从给定地址找到对应longest数组中的索引，逆向寻找到第一个值为0的节点，即为当初分配的。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">unsigned</span> offset = base - pageshead; <span class="comment">// 获取offset</span></span><br><span class="line">index = offset + size - <span class="number">1</span>;    </span><br><span class="line"><span class="keyword">for</span> (; self[index]; index = PARENT(index)) <span class="comment">// 直到到达了当初分配的时候的块，找到了具体要分配的node_size和index</span></span><br><span class="line">   &#123;</span><br><span class="line">       node_size *= <span class="number">2</span>;</span><br><span class="line">       <span class="keyword">if</span> (index == <span class="number">0</span>)</span><br><span class="line">           <span class="keyword">return</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>后续数组的维护，从找到的index开始向父节点遍历，调整节点的值</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (index) <span class="comment">// 更新被释放节点的父节点</span></span><br><span class="line">&#123;</span><br><span class="line">    index = PARENT(index);</span><br><span class="line">    node_size *= <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">    left_longest = self[LEFT_LEAF(index)];</span><br><span class="line">    right_longest = self[RIGHT_LEAF(index)];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (left_longest + right_longest == node_size)</span><br><span class="line">        self[index] = node_size;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        self[index] = MAX(left_longest, right_longest);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="buddy测试"><a href="#buddy测试" class="headerlink" title="buddy测试"></a>buddy测试</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">整个测试过程如下:</span><br><span class="line">首先申请 p0 p1 p2 三个单页表</span><br><span class="line">然后依次释放</span><br><span class="line">然后申请   p0 p1 p2  p3</span><br><span class="line">大小分别是 65 40 257 63</span><br><span class="line">此时的buddy块:    |64+64|64|64|128+128|512|</span><br><span class="line">对应的页块:       |p0   |p1|p3|empty  |p2 |</span><br><span class="line">然后释放. p0 p1 p3</span><br><span class="line">现在前512个页已经空了</span><br><span class="line">然后申请:     p4  p5</span><br><span class="line">大小为:      129 255</span><br><span class="line">内存布局如下:</span><br><span class="line">|256|256|512|</span><br><span class="line">|p4 |p5 |p2 |</span><br><span class="line">最后释放所有的块.</span><br></pre></td></tr></table></figure>
+
+<p>经过测试可以正常运行。</p>
+
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="article-nav">
+                        
+                        
+                            <div class="article-next">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2023/10/12/%E8%8E%B7%E5%8F%96%E5%8D%97%E5%BC%80oj%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%A0%B7%E4%BE%8B/"
+                                   title="NKOJ:面向答案编程"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">NKOJ:面向答案编程</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                            <span class="right arrow-icon flex-center">
+                                      <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#buddy-system%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3"><span class="nav-text">buddy_system设计文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9C%81%E6%B5%81%E7%89%88"><span class="nav-text">省流版</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E7%89%88"><span class="nav-text">具体版</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-text">数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7"><span class="nav-text">辅助工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#buddy%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-text">buddy初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#buddy%E5%88%9D%E5%A7%8B%E5%8C%96%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98"><span class="nav-text">buddy初始化分配内存</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-pages%E6%95%B0%E7%BB%84%E7%9A%84%E7%BB%B4%E6%8A%A4%EF%BC%9A"><span class="nav-text">1.pages数组的维护：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E5%99%A8-longest%E6%95%B0%E7%BB%84"><span class="nav-text">2. 内存分配器 longest数组</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#buddy%E7%94%B3%E8%AF%B7%E9%A1%B5"><span class="nav-text">buddy申请页</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%88%E5%BA%8F%E9%81%8D%E5%8E%86%EF%BC%9A"><span class="nav-text">先序遍历：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%90%91%E8%B0%83%E6%95%B4"><span class="nav-text">反向调整</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#buddy%E9%87%8A%E6%94%BE%E9%A1%B5"><span class="nav-text">buddy释放页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#buddy%E6%B5%8B%E8%AF%95"><span class="nav-text">buddy测试</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="border-box website-info-box default">
+        
+            <div class="copyright-info info-item default">
+                &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2023
+                
+                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">兴趣使然</a>
+                
+            </div>
+
+            <div class="theme-info info-item default">
+                由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+            </div>
+
+            
+
+            
+        
+
+        <div class="count-item info-item default">
+            
+
+            
+                <span class="count-box border-box uv">
+                    <span class="item-type border-box">访客数</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="tools-list border-box">
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#buddy-system%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3"><span class="nav-text">buddy_system设计文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9C%81%E6%B5%81%E7%89%88"><span class="nav-text">省流版</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E7%89%88"><span class="nav-text">具体版</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-text">数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7"><span class="nav-text">辅助工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#buddy%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-text">buddy初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#buddy%E5%88%9D%E5%A7%8B%E5%8C%96%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98"><span class="nav-text">buddy初始化分配内存</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-pages%E6%95%B0%E7%BB%84%E7%9A%84%E7%BB%B4%E6%8A%A4%EF%BC%9A"><span class="nav-text">1.pages数组的维护：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E5%99%A8-longest%E6%95%B0%E7%BB%84"><span class="nav-text">2. 内存分配器 longest数组</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#buddy%E7%94%B3%E8%AF%B7%E9%A1%B5"><span class="nav-text">buddy申请页</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%88%E5%BA%8F%E9%81%8D%E5%8E%86%EF%BC%9A"><span class="nav-text">先序遍历：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%90%91%E8%B0%83%E6%95%B4"><span class="nav-text">反向调整</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#buddy%E9%87%8A%E6%94%BE%E9%A1%B5"><span class="nav-text">buddy释放页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#buddy%E6%B5%8B%E8%AF%95"><span class="nav-text">buddy测试</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+<!-- common -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local-search -->
+
+
+<!-- code-block -->
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- category-page -->
+    
+
+    <!-- links-page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
