@@ -1,774 +1,837 @@
-
-
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="兴趣使然">
-  <meta name="keywords" content="">
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
     <meta name="description" content="求知若渴，虚怀若谷">
-<meta property="og:type" content="website">
-<meta property="og:title" content="兴趣使然">
-<meta property="og:url" content="http://interestcausesthis.com/page/2/index.html">
-<meta property="og:site_name" content="兴趣使然">
-<meta property="og:description" content="求知若渴，虚怀若谷">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="兴趣使然">
-<meta name="twitter:card" content="summary_large_image">
-  
-  
-  
-  <title>兴趣使然</title>
+    <meta name="author" content="兴趣使然">
+    
+    <title>
+        
+        兴趣使然
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
 
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+    
+        <link rel="shortcut icon" href="/img/avater.jpeg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
 
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
 
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
 
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
 
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"interestcausesthis.com","root":"/","version":"1.9.1","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"interestcausesthis.com","root":"/","language":"zh-CN"}
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"style":{"primary_color":"#0066cc","logo":"/img/avater.jpeg","favicon":"/img/avater.jpeg","avatar":"/img/avater.jpeg","first_screen":{"enable":true,"background_img":"/img/bg.svg","description":"此情可待成追忆，只是当时已惘然","hitokoto":true},"scroll":{"progress_bar":false,"percent":false}},"local_search":{"enable":false,"preload":false},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null}},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":false,"page_pv":true}},"version":"3.8.4"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-
-  
 <meta name="generator" content="Hexo 6.1.0"></head>
 
 
 <body>
-  
-
-  <header>
+<div class="progress-bar-container">
     
 
-<div class="header-inner" style="height: 100vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>兴趣使然</strong>
-    </a>
+    
+</div>
 
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="iconfont icon-home-fill"></i>
-                首页
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                归档
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+<main class="page-container border-box">
+
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box is-home">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper transparent-1">
+
+    <div class="border-box header-content">
+        <div class="left border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/img/avater.jpeg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               兴趣使然
             </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/wallhaven-9mjoy1.png') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="求知若渴，虚怀若谷"></span>
-          
         </div>
 
-        
-      </div>
-
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
+        <div class="right border-box">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class="active"
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
         </div>
-      
     </div>
-  </div>
-</div>
 
-</div>
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class="active"
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+        </ul>
+    </div>
 
-  </header>
+    <div class="window-mask"></div>
 
-  <main>
-    
-      <div class="container nopadding-x-md">
-        <div id="board"
-          style="margin-top: 0">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+
                 
 
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2022/07/18/pixel%20logic%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" target="_self">
-          <img src="/../img/wall1.jpg" srcset="/img/loading.gif" lazyload alt="pixel logic阅读笔记">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+                    <div class="home-content-container fade-in-down-animation">
+    <ul class="home-article-list border-box">
         
-        <a href="/2022/07/18/pixel%20logic%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" target="_self">
-          pixel logic阅读笔记
-        </a>
-      </h1>
+            <li class="home-article-item">
 
-      
-      <a class="index-excerpt " href="/2022/07/18/pixel%20logic%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" target="_self">
-        <div>
-          pixel logic阅读笔记为什么是这本书我总是浪费时间在选择和搜索中，这的确很重要。但我无法确定哪些更好，既然无法确定，先开始再说。 这本书分为多个章节，我同时得到了英文版和中文机翻的电子书，两本互相参照着看。 0.引言（introduction）序言选择适合你的软件工具，是你自己的能力决定作品是否优秀。 像素画的独特之处在于，你掌握每一个像素。 像素画起源于受限制。 完成一副画可以分很多步骤
+                
+
+                <div class="home-article-item-bottom border-box">
+                    
+                    <h3 class="home-article-title border-box">
+                        <a href="/2022/10/30/%E6%B3%A2%E6%B3%A2%E7%BB%AD%E5%B0%8F%E6%B8%B8%E6%88%8F/">
+                            童年回忆波波续
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content keep-markdown-body">
+                        
+                            波波续小游戏在网络资源匮乏的年代，孩童之间曾经流传过一种自定义的手势游戏，我将其视为剪刀石头布的进化版。下面我将为你描述我小时候游玩过的一种的游戏规则。
+和剪刀石头布相同，双人游戏。
+这个游戏的核心在于双方同时出手势，根据手势对应技能的含义对抗产生结...
+                        
+                    </div>
+
+                    
+
+<div class="article-meta-info-container border-box home">
+    <div class="article-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Fri Nov 04 2022 13:17:41 GMT+0800">2022-11-04 13:17:41</span>
+            </span>
+        
+
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2022/10/30/%E6%B3%A2%E6%B3%A2%E7%BB%AD%E5%B0%8F%E6%B8%B8%E6%88%8F/">阅读全文&nbsp;<i class="icon fas fa-angles-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <div class="home-article-item-bottom border-box">
+                    
+                    <h3 class="home-article-title border-box">
+                        <a href="/2022/07/18/pixel%20logic%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/">
+                            pixel logic阅读笔记
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content keep-markdown-body">
+                        
+                            pixel logic阅读笔记为什么是这本书我总是浪费时间在选择和搜索中，这的确很重要。但我无法确定哪些更好，既然无法确定，先开始再说。
+这本书分为多个章节，我同时得到了英文版和中文机翻的电子书，两本互相参照着看。
+0.引言（introduction...
+                        
+                    </div>
+
+                    
+
+<div class="article-meta-info-container border-box home">
+    <div class="article-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Mon Jul 18 2022 17:07:50 GMT+0800">2022-07-18 17:07:50</span>
+            </span>
+        
+
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2022/07/18/pixel%20logic%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/">阅读全文&nbsp;<i class="icon fas fa-angles-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <div class="home-article-item-bottom border-box">
+                    
+                    <h3 class="home-article-title border-box">
+                        <a href="/2022/06/15/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                            pr学习笔记
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content keep-markdown-body">
+                        
+                            pr学习笔记第一天
+1.新建项目软件的基础打开
+2.新建序列新建序列的两种方式，ctrl+n，两种主要的预设n制和P制，关于帧、像素、场序等的一些了解，可以自定义一个预设。
+3.了解pr工作区先是从布局上大致介绍了pr界面。然后详细介绍了编辑界面以及...
+                        
+                    </div>
+
+                    
+
+<div class="article-meta-info-container border-box home">
+    <div class="article-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Wed Jun 15 2022 16:34:41 GMT+0800">2022-06-15 16:34:41</span>
+            </span>
+        
+
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2022/06/15/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">阅读全文&nbsp;<i class="icon fas fa-angles-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <div class="home-article-item-bottom border-box">
+                    
+                    <h3 class="home-article-title border-box">
+                        <a href="/2022/06/11/%E4%BA%BA%E4%BB%AC%E6%80%BB%E6%98%AF%E6%97%A0%E7%97%9B%E5%91%BB%E5%90%9F/">
+                            人们总是喜新厌旧
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content keep-markdown-body">
+                        
+                            更换了博客主题
+
+每次我遇到一个惊艳的主题都会大加赞叹，但得到后不久便不知不觉中厌倦。无论是反复听一首好听的歌，还是将美丽的图画设为壁纸。事物的吸引人之处都在反复欣赏中被磨损，直至习以为常，逐渐遗忘。好在这世上有无穷尽的新事物，有无穷的新过客。很多东...
+                        
+                    </div>
+
+                    
+
+<div class="article-meta-info-container border-box home">
+    <div class="article-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Sat Jun 11 2022 11:19:16 GMT+0800">2022-06-11 11:19:16</span>
+            </span>
+        
+
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2022/06/11/%E4%BA%BA%E4%BB%AC%E6%80%BB%E6%98%AF%E6%97%A0%E7%97%9B%E5%91%BB%E5%90%9F/">阅读全文&nbsp;<i class="icon fas fa-angles-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <div class="home-article-item-bottom border-box">
+                    
+                    <h3 class="home-article-title border-box">
+                        <a href="/2022/06/05/%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/">
+                            收藏我正在尝试阅读的电子书
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content keep-markdown-body">
+                        
+                            
+
+收藏我正在尝试阅读的电子书真是越学习越是发现自己的笨拙与无知。刚刚发现的GitHub的一个好东西。pdf文件在仓库里。看这里。↓阅读记录
+
+                        
+                    </div>
+
+                    
+
+<div class="article-meta-info-container border-box home">
+    <div class="article-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Sat Jun 11 2022 11:21:18 GMT+0800">2022-06-11 11:21:18</span>
+            </span>
+        
+
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2022/06/05/%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/">阅读全文&nbsp;<i class="icon fas fa-angles-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <div class="home-article-item-bottom border-box">
+                    
+                    <h3 class="home-article-title border-box">
+                        <a href="/2022/05/31/%E6%94%B6%E8%97%8F%E4%BB%8E%E6%9C%AA%E5%81%9C%E6%AD%A2/">
+                            收藏我在互联网上见到的有趣的网站、视频或人或文。
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content keep-markdown-body">
+                        
+                            有趣或者有用的东西
+
+1.近在咫尺。 https://interestcausesthis.com 哈哈  
+2.zlibrary 全球最大的数字图书馆。 网址常常变更，直接去搜可以找到
+3.TBOX导航。 这个网站收录了大量有趣精致的在线工具。
+4...
+                        
+                    </div>
+
+                    
+
+<div class="article-meta-info-container border-box home">
+    <div class="article-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Fri Jun 10 2022 18:57:08 GMT+0800">2022-06-10 18:57:08</span>
+            </span>
+        
+
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2022/05/31/%E6%94%B6%E8%97%8F%E4%BB%8E%E6%9C%AA%E5%81%9C%E6%AD%A2/">阅读全文&nbsp;<i class="icon fas fa-angles-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <div class="home-article-item-bottom border-box">
+                    
+                    <h3 class="home-article-title border-box">
+                        <a href="/2022/05/29/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">
+                            如何制作一个博客
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content keep-markdown-body">
+                        
+                            
+
+如何制作博客制作前准备1.什么是博客假如不查看百度百科，仅以直观的个人理解。博客就是一个网站，之所以称为博客是因为网站的内容常常是个人的一些思考。
+假如百度百科：博客简言之，Blog就是以网络作为载体，简易迅速便捷地发布自己的心得，及时有效轻松地...
+                        
+                    </div>
+
+                    
+
+<div class="article-meta-info-container border-box home">
+    <div class="article-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Wed Jun 15 2022 12:13:03 GMT+0800">2022-06-15 12:13:03</span>
+            </span>
+        
+
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2022/05/29/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">阅读全文&nbsp;<i class="icon fas fa-angles-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <div class="home-article-item-bottom border-box">
+                    
+                    <h3 class="home-article-title border-box">
+                        <a href="/2022/05/22/%E6%9A%91%E5%81%87%E8%AE%A1%E5%88%92/">
+                            暑假计划
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content keep-markdown-body">
+                        
+                            
+现在是2022年5月22日，距离高考仅剩大约两周，离本学期期末考也仅剩1个月。  
+暑假在即，想我在过去的几乎每个暑假或寒假之前都曾列出各种提升自己的计划，但基本都无一例外的中道崩殂。唯一一次值得提起的坚持经历恐怕就是去年的暑假给亲戚家小孩一连补课...
+                        
+                    </div>
+
+                    
+
+<div class="article-meta-info-container border-box home">
+    <div class="article-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Wed Sep 07 2022 20:33:34 GMT+0800">2022-09-07 20:33:34</span>
+            </span>
+        
+
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2022/05/22/%E6%9A%91%E5%81%87%E8%AE%A1%E5%88%92/">阅读全文&nbsp;<i class="icon fas fa-angles-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <div class="home-article-item-bottom border-box">
+                    
+                    <h3 class="home-article-title border-box">
+                        <a href="/2022/05/19/%E4%B9%A6%E6%8E%A5%E4%B8%8A%E5%9B%9E/">
+                            5-19学习成果
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content keep-markdown-body">
+                        
+                            
+好吧  
+必须承认我大概是走错了路，添加不了评论的原因并不是因为不会html或js,css。  
+它只是因为我在自己的一堆文件夹中始终找不到对应的html文件，即使更改了所有我能找到的html文件的对应位置，博客页面依旧不会发生任何的改变。这大概是...
+                        
+                    </div>
+
+                    
+
+<div class="article-meta-info-container border-box home">
+    <div class="article-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Sun May 22 2022 13:52:20 GMT+0800">2022-05-22 13:52:20</span>
+            </span>
+        
+
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2022/05/19/%E4%B9%A6%E6%8E%A5%E4%B8%8A%E5%9B%9E/">阅读全文&nbsp;<i class="icon fas fa-angles-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <div class="home-article-item-bottom border-box">
+                    
+                    <h3 class="home-article-title border-box">
+                        <a href="/2022/05/18/%E6%B2%A1%E5%BC%80%E8%AF%84%E8%AE%BA%E7%9A%84%E8%AF%B4%E6%98%8E/">
+                            关于为什么没有开启评论功能
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content keep-markdown-body">
+                        
+                            说明
+
+我本来打算使用Gitalk来添加评论功能，但摆弄一阵子发现怎么都弄不好。分析原因是由于评论功能的添加是要直接改变博客的html和js文件。由于目前使用的博客模板很简单，并没有在配置文本中设置评论功能，想要直接添加评论只能换模板。
+但是我是脑残...
+                        
+                    </div>
+
+                    
+
+<div class="article-meta-info-container border-box home">
+    <div class="article-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Sat Jun 11 2022 11:18:19 GMT+0800">2022-06-11 11:18:19</span>
+            </span>
+        
+
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2022/05/18/%E6%B2%A1%E5%BC%80%E8%AF%84%E8%AE%BA%E7%9A%84%E8%AF%B4%E6%98%8E/">阅读全文&nbsp;<i class="icon fas fa-angles-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+    </ul>
+    
+    <div class="paginator border-box flex-center">
+        <div class="btn-wrap allowed">
+            <a class="jump-btn"
+               href="/"
+            ><i class="fa-solid fa-chevron-left"></i></a>
         </div>
-      </a>
 
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-07-18 17:02" pubdate>
-              2022-07-18
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%9A%91%E5%81%87%E8%AE%A1%E5%88%92/">#暑假计划</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2022/06/15/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-          <img src="/../img/wall1.jpg" srcset="/img/loading.gif" lazyload alt="pr学习笔记">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/06/15/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-          pr学习笔记
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2022/06/15/pr%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-        <div>
-          pr学习笔记第一天 1.新建项目软件的基础打开 2.新建序列新建序列的两种方式，ctrl+n，两种主要的预设n制和P制，关于帧、像素、场序等的一些了解，可以自定义一个预设。 3.了解pr工作区先是从布局上大致介绍了pr界面。然后详细介绍了编辑界面以及一些小的界面。包括源界面、工作区、节目区、时间轴等。 4.如何导入素材两种方法，仍然是工作区，和菜单栏两个位置。要注意的就是导入的文件格式，可以是图片
+        <div class="page-number-box border-box flex-center">
+            <input class="page-number-input border-box base-color-size"
+                   type="number"
+                   value="2"
+                   min="1"
+                   max="3"
+            ><span class="delimiter base-color-size">/</span><span class="base-color-size">3</span>
         </div>
-      </a>
 
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-06-15 08:33" pubdate>
-              2022-06-15
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%9A%91%E5%81%87%E8%AE%A1%E5%88%92/">#暑假计划</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2022/06/11/%E4%BA%BA%E4%BB%AC%E6%80%BB%E6%98%AF%E6%97%A0%E7%97%9B%E5%91%BB%E5%90%9F/" target="_self">
-          <img src="/../img/wall1.jpg" srcset="/img/loading.gif" lazyload alt="人们总是喜新厌旧">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/06/11/%E4%BA%BA%E4%BB%AC%E6%80%BB%E6%98%AF%E6%97%A0%E7%97%9B%E5%91%BB%E5%90%9F/" target="_self">
-          人们总是喜新厌旧
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2022/06/11/%E4%BA%BA%E4%BB%AC%E6%80%BB%E6%98%AF%E6%97%A0%E7%97%9B%E5%91%BB%E5%90%9F/" target="_self">
-        <div>
-          更换了博客主题  每次我遇到一个惊艳的主题都会大加赞叹，但得到后不久便不知不觉中厌倦。无论是反复听一首好听的歌，还是将美丽的图画设为壁纸。事物的吸引人之处都在反复欣赏中被磨损，直至习以为常，逐渐遗忘。好在这世上有无穷尽的新事物，有无穷的新过客。很多东西不如不得到。  生命是一团欲望，欲望不能满足便痛苦，满足便无聊，人生就在痛苦和无聊之间摇摆。（《叔本华文集：悲观论集卷》）   这次更换了主题。相比
+        <div class="btn-wrap allowed">
+            <a class="jump-btn"
+               href="/page/3/"
+            ><i class="fa-solid fa-chevron-right"></i></a>
         </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-06-11 11:04" pubdate>
-              2022-06-11
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%80%9D%E8%80%83/">#思考</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2022/06/05/%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/" target="_self">
-          <img src="http://images.wallpaperscraft.com/image/single/books_library_photoshop_127118_1280x720.jpg" srcset="/img/loading.gif" lazyload alt="收藏我正在尝试阅读的电子书">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/06/05/%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/" target="_self">
-          收藏我正在尝试阅读的电子书
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2022/06/05/%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/" target="_self">
-        <div>
-          收藏我正在尝试阅读的电子书真是越学习越是发现自己的笨拙与无知。刚刚发现的GitHub的一个好东西。pdf文件在仓库里。看这里。↓阅读记录
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-06-05 10:56" pubdate>
-              2022-06-05
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%94%B6%E8%97%8F/">#收藏</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2022/05/31/%E6%94%B6%E8%97%8F%E4%BB%8E%E6%9C%AA%E5%81%9C%E6%AD%A2/" target="_self">
-          <img src="https://pic.3gbizhi.com/2020/0910/thumb_1680_0_20200910081911645.jpeg" srcset="/img/loading.gif" lazyload alt="收藏我在互联网上见到的有趣的网站、视频或人或文。">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/05/31/%E6%94%B6%E8%97%8F%E4%BB%8E%E6%9C%AA%E5%81%9C%E6%AD%A2/" target="_self">
-          收藏我在互联网上见到的有趣的网站、视频或人或文。
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2022/05/31/%E6%94%B6%E8%97%8F%E4%BB%8E%E6%9C%AA%E5%81%9C%E6%AD%A2/" target="_self">
-        <div>
-          有趣或者有用的东西  1.近在咫尺。 https:&#x2F;&#x2F;interestcausesthis.com 哈哈   2.zlibrary 全球最大的数字图书馆。 网址常常变更，直接去搜可以找到 3.TBOX导航。 这个网站收录了大量有趣精致的在线工具。 4.爱给网。 游戏素材网站，当年用qt做小游戏时用过一会。 5.一个精美的壁纸网站 6.google地球（墙）。 很有名，但我刚知道。我能玩一天。 7.
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-31 18:49" pubdate>
-              2022-05-31
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%94%B6%E8%97%8F/">#收藏</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/05/29/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" target="_self">
-          如何制作一个博客
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/05/29/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" target="_self">
-        <div>
-          如何制作博客制作前准备1.什么是博客假如不查看百度百科，仅以直观的个人理解。博客就是一个网站，之所以称为博客是因为网站的内容常常是个人的一些思考。 假如百度百科：博客简言之，Blog就是以网络作为载体，简易迅速便捷地发布自己的心得，及时有效轻松地与他人进行交流，再集丰富多彩的个性化展示于一体的综合性平台。 这里又没有考试和标准答案，所以怎么理解都无妨。反正我是只把它当作一个普通网站。 2.为什
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-29 22:32" pubdate>
-              2022-05-29
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%9A%91%E5%81%87%E8%AE%A1%E5%88%92/">#暑假计划</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/05/22/%E6%9A%91%E5%81%87%E8%AE%A1%E5%88%92/" target="_self">
-          暑假计划
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/05/22/%E6%9A%91%E5%81%87%E8%AE%A1%E5%88%92/" target="_self">
-        <div>
-          现在是2022年5月22日，距离高考仅剩大约两周，离本学期期末考也仅剩1个月。   暑假在即，想我在过去的几乎每个暑假或寒假之前都曾列出各种提升自己的计划，但基本都无一例外的中道崩殂。唯一一次值得提起的坚持经历恐怕就是去年的暑假给亲戚家小孩一连补课20天，之所以能坚持也不过是由于外部因素的驱动。    不管怎么说，再尝试一次吧，这次标准降低些，不求一定能达到好的效果，仅仅为求能坚持下来。 0.更
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-22 13:46" pubdate>
-              2022-05-22
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%9A%91%E5%81%87%E8%AE%A1%E5%88%92/">#暑假计划</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/05/19/%E4%B9%A6%E6%8E%A5%E4%B8%8A%E5%9B%9E/" target="_self">
-          5-19学习成果
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/05/19/%E4%B9%A6%E6%8E%A5%E4%B8%8A%E5%9B%9E/" target="_self">
-        <div>
-          好吧   必须承认我大概是走错了路，添加不了评论的原因并不是因为不会html或js,css。   它只是因为我在自己的一堆文件夹中始终找不到对应的html文件，即使更改了所有我能找到的html文件的对应位置，博客页面依旧不会发生任何的改变。这大概是合理的，因为以往仅仅通过更改配置文件就能直接更改网页的便利与此发生了冲突。或许内部有着更加简单的原因而我未曾发现。所以我暂时放弃浪费时间不断试错。
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-19 19:59" pubdate>
-              2022-05-19
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/05/18/%E6%B2%A1%E5%BC%80%E8%AF%84%E8%AE%BA%E7%9A%84%E8%AF%B4%E6%98%8E/" target="_self">
-          关于为什么没有开启评论功能
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/05/18/%E6%B2%A1%E5%BC%80%E8%AF%84%E8%AE%BA%E7%9A%84%E8%AF%B4%E6%98%8E/" target="_self">
-        <div>
-          说明  我本来打算使用Gitalk来添加评论功能，但摆弄一阵子发现怎么都弄不好。分析原因是由于评论功能的添加是要直接改变博客的html和js文件。由于目前使用的博客模板很简单，并没有在配置文本中设置评论功能，想要直接添加评论只能换模板。 但是我是脑残吗？我又不是为了做博客而做博客的。虽然最初的目的只是装逼，但是现在我可是打算用它记录我的学习过程的。再说就算是以前的BUTTERFLY模板安装来必力（
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-18 22:40" pubdate>
-              2022-05-18
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">#博客建设</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/05/18/%E5%8F%8D%E6%80%9D/" target="_self">
-          反思
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/05/18/%E5%8F%8D%E6%80%9D/" target="_self">
-        <div>
-          我是在大学，还是只是大一点的高中？我仍旧时常怀念起那个闷热的夜间，忘记了是高二还是高三的那个拥挤的宿舍空间。一群人畅想着大学里的美好生活。我想我当时的幻想也一定十分美好：在一个好的大学里，学一门乐器，邂逅一个相互一见钟情的女孩，始终保持着良好的状态，轻松地学习专业知识。然而现实却是，没有乐器，没有一见钟情，亦没有轻松地学习。我仍旧匆匆行走，避开陌生的视线，尽量走在树荫中，竭力成为一个不惹人注目的路
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-18 13:32" pubdate>
-              2022-05-18
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%80%9D%E8%80%83/">#思考</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
+    </div>
 
 
 
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#board">3</a><a class="extend next" rel="next" href="/page/3/#board"><i class="iconfont icon-arrowright"></i></a>
-    </span>
-  </nav>
+
+</div>
 
 
-
-              </div>
+                
             </div>
-          </div>
-        </div>
-      </div>
-    
 
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
         </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="border-box website-info-box default">
+        
+            <div class="copyright-info info-item default">
+                &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2023
+                
+                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">兴趣使然</a>
+                
+            </div>
+
+            <div class="theme-info info-item default">
+                由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+            </div>
+
+            
+
+            
+        
+
+        <div class="count-item info-item default">
+            
+
+            
+                <span class="count-box border-box uv">
+                    <span class="item-type border-box">访客数</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+        </div>
     </div>
-  </div>
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box side-tools-show-handle">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
 </div>
 
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
     </div>
-  
-  
-  
-  
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
 </div>
 
-  </footer>
 
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+    <!-- local search -->
+    
 
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
+    <!-- tablet toc -->
+    
+</main>
 
 
 
 
-  
+<!-- common -->
 
-  
+<script src="/js/utils.js"></script>
 
-  
+<script src="/js/header-shrink.js"></script>
 
-  
+<script src="/js/back2top.js"></script>
 
-  
+<script src="/js/dark-light-toggle.js"></script>
 
-  
+<script src="/js/main.js"></script>
 
-  
-
-
+<script src="/js/libs/anime.min.js"></script>
 
 
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
+<!-- local-search -->
+
+
+<!-- code-block -->
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    
+
+    <!-- category-page -->
+    
+
+    <!-- links-page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
 
 
 
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
 </body>
 </html>
