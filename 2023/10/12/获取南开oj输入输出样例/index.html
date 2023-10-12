@@ -9,7 +9,7 @@
     
     <title>
         
-            关于极简 |
+            NKOJ:面向答案编程 |
         
         兴趣使然
     </title>
@@ -145,7 +145,7 @@
             <div class="article-content-bottom border-box">
                 
                     <div class="article-title">
-                        关于极简
+                        NKOJ:面向答案编程
                     </div>
                 
 
@@ -174,13 +174,13 @@
         
             <span class="meta-info-item article-create-date">
                 <i class="icon fa-solid fa-calendar-check"></i>&nbsp;
-                <span class="pc">2023-10-12 20:01:12</span>
-                <span class="mobile">2023-10-12 20:01</span>
+                <span class="pc">2023-10-12 20:32:32</span>
+                <span class="mobile">2023-10-12 20:32</span>
             </span>
 
             <span class="meta-info-item article-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="pc" data-updated="Thu Oct 12 2023 20:09:19 GMT+0800">2023-10-12 20:09:19</span>
+                <span class="pc" data-updated="Thu Oct 12 2023 21:15:02 GMT+0800">2023-10-12 21:15:02</span>
             </span>
         
 
@@ -209,10 +209,41 @@
                 <div class="article-content keep-markdown-body">
                     
 
-                    <p>​	刚建博客，满世界找主题的时候，我就发现了一句话，博客主题的尽头是极简。</p>
-<p>​	很快这句话就在我身上得到了验证，新鲜感过后，懒得再打开那花里胡哨的博客，懒得再找漂亮壁纸，懒得再找教程添加一个个功能。甚至到后来的懒得再发表文章。</p>
-<p>​	博客的本质是文章。</p>
-<p>​	到最后姑且说，就这样，简单就好。</p>
+                    <p>说实话，我一直想着某一天攻入南开的服务器，然后运行echo “hacked by XXX” &gt; ATTENTION.txt，XXX是我的好朋友的名字缩写。可惜能力有限，未曾成功过。</p>
+<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>近日，密码学实验课开始，在nkoj上布置了一道密码学题目。</p>
+<p>于是我登上了许久未登的OJ</p>
+<p>吐槽一句，为什么把我的三叶换成了这个图，管理员没一个二次元吗？</p>
+<img src="assets/image-20231012203857986.png" alt="image-20231012203857986" style="zoom:50%;" />
+
+<p>我还是喜欢这张</p>
+<img src="assets/Miyamizu_Mitsuha_Reading_C_Programming.png" alt="Miyamizu_Mitsuha_Reading_C_Programming" style="zoom: 25%;" />
+
+<h2 id="尝试"><a href="#尝试" class="headerlink" title="尝试"></a>尝试</h2><p>上学期学了点文件包含漏洞，加上之前在一个机器学习oj网站上成功getshell进入过后台服务器，说起来那时算是第一次实战，只不过可惜漏洞很早就被别人发现了。</p>
+<p>在NKOJ上尝试了很多次都没能成功。</p>
+<p>主要是利用payloadallthethings仓库中的各种语言的reverse shell代码进行尝试。因为oj本身可以运行程序，就相当于一个任意命令执行的机会。但是尝试了根本没成功过，基本上只试了python和C++，但是本地的ncat一点反应都没有。遂放弃。</p>
+<p>但是并非一无所获，至少收集到了一些信息。</p>
+<h2 id="意外之喜"><a href="#意外之喜" class="headerlink" title="意外之喜"></a>意外之喜</h2><p>发现OJ只有在产生编译错误的时候才会出现查看按钮</p>
+<p><img src="/assets/image-20231012204941981.png" alt="image-20231012204941981"></p>
+<p>于是打开开发者工具看看是不是有的没显示出来。找到返回的json信息，结果发现只有当答案错误的时候会多显示点detail</p>
+<p><img src="/assets/image-20231012205100864.png" alt="image-20231012205100864"></p>
+<p>然后就可以知道oj的基本逻辑是用&#x2F;var&#x2F;www&#x2F;data&#x2F;problems-data&#x2F;4&#x2F;1.in作为输入，输出和&#x2F;va&#x2F;www&#x2F;data&#x2F;problems-data&#x2F;4&#x2F;1.out对比。4是问题编号，hello world对应的是4号问题。</p>
+<p>加上之前的一次编译错误暴露出文件目录，得到了相对位置。</p>
+<p><img src="/assets/image-20231012205549443.png" alt="image-20231012205549443"></p>
+<p>联想到刚学习的编译原理，在第一个预处理阶段，会把包含文件直接替换成对应的文件内容，那这样的话就可以通过包含对应文件，利用编译报错获得文件内容了。</p>
+<p>最初我的想法是直接包含别人写的代码文件，那岂不是就直接利用别人的作业通过了。</p>
+<p><img src="/assets/image-20231012205904284.png" alt="image-20231012205904284"></p>
+<p>但是权限不够，只能退而求其次去读输入输出了</p>
+<p><img src="/assets/image-20231012205920163.png" alt="image-20231012205920163"></p>
+<p>于是就通过这种方法获得了对应题目的输入</p>
+<p><img src="/assets/image-20231012210419079.png" alt="image-20231012210419079"></p>
+<p><img src="/assets/image-20231012210427705.png" alt="image-20231012210427705"></p>
+<p>这样的话，我们就可以写一段万能代码，对于所有的问题，将实际输入和每一个可能的输入文件对比，完全相同时就输出对应的输出文件。</p>
+<h2 id="心灰意冷"><a href="#心灰意冷" class="headerlink" title="心灰意冷"></a>心灰意冷</h2><p>后续，我利用这个漏洞，又尝试读取很多linux的敏感文件，要么是权限不够，要么是完全没有可用信息。对于很多文件，读出的内容都很反常，不像是一个正常的linux服务器，于是我就怀疑这是否是运行在docker上的</p>
+<p>读了&#x2F;.dockerensdav，系统没有编译错误，这说明这个文件是空的，但是确实存在，于是证明了它运行在docker，遂放弃了更深的渗透，毕竟我连docker都不会，还得花好一会儿学。</p>
+<p>再后来，我尝试查找1号用户，找到了他的学号，应该是个管理员，恰好又在我好友列表中。于是从github搜索他的用户名。</p>
+<p>出乎意料的，这OJ居然是开源的</p>
+<p><img src="/assets/image-20231012211112483.png" alt="image-20231012211112483"></p>
+<p>顿时发现小丑竟是我自己。</p>
 
                 </div>
 
@@ -232,31 +263,15 @@
                 
                     <div class="article-nav">
                         
-                            <div class="article-prev">
-                                <a class="prev"
-                                   rel="prev"
-                                   href="/2023/10/12/%E8%8E%B7%E5%8F%96%E5%8D%97%E5%BC%80oj%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%A0%B7%E4%BE%8B/"
-                                   title="NKOJ:面向答案编程"
-                                >
-                                    <span class="left arrow-icon flex-center">
-                                      <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                            <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">NKOJ:面向答案编程</span>
-                                        <span class="post-nav-item">上一篇</span>
-                                    </span>
-                                </a>
-                            </div>
-                        
                         
                             <div class="article-next">
                                 <a class="next"
                                    rel="next"
-                                   href="/2023/09/21/newblog/"
-                                   title="好久不见"
+                                   href="/2023/10/12/%E6%9E%81%E7%AE%80/"
+                                   title="关于极简"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">好久不见</span>
+                                        <span class="post-nav-title-item text-ellipsis">关于极简</span>
                                         <span class="post-nav-item">下一篇</span>
                                     </span>
                                             <span class="right arrow-icon flex-center">
@@ -284,7 +299,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B5%B7%E5%9B%A0"><span class="nav-text">起因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%9D%E8%AF%95"><span class="nav-text">尝试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%84%8F%E5%A4%96%E4%B9%8B%E5%96%9C"><span class="nav-text">意外之喜</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%83%E7%81%B0%E6%84%8F%E5%86%B7"><span class="nav-text">心灰意冷</span></a></li></ol>
     </div>
 </div>
 
@@ -419,7 +434,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B5%B7%E5%9B%A0"><span class="nav-text">起因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%9D%E8%AF%95"><span class="nav-text">尝试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%84%8F%E5%A4%96%E4%B9%8B%E5%96%9C"><span class="nav-text">意外之喜</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%83%E7%81%B0%E6%84%8F%E5%86%B7"><span class="nav-text">心灰意冷</span></a></li></ol>
     </div>
 </div>
 

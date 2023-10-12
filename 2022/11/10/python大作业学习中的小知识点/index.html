@@ -35,7 +35,7 @@
     <script class="keep-theme-configurations">
     const KEEP = window.KEEP || {}
     KEEP.hexo_config = {"hostname":"interestcausesthis.com","root":"/","language":"zh-CN"}
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"style":{"primary_color":"#0066cc","logo":"/img/avater.jpeg","favicon":"/img/avater.jpeg","avatar":"/img/avater.jpeg","first_screen":{"enable":true,"background_img":"/img/bg.svg","description":"此情可待成追忆，只是当时已惘然","hitokoto":true},"scroll":{"progress_bar":false,"percent":false}},"local_search":{"enable":false,"preload":false},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null}},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":false,"page_pv":true}},"version":"3.8.4"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"style":{"primary_color":"#0066cc","logo":"/img/avater.jpeg","favicon":"/img/avater.jpeg","avatar":"/img/avater.jpeg","first_screen":{"enable":true,"background_img":"/img/bg.svg","description":"此情可待成追忆，只是当时已惘然","hitokoto":true},"scroll":{"progress_bar":false,"percent":false}},"local_search":{"enable":false,"preload":false},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null}},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":false,"page_pv":true}},"version":"3.8.4"}
     KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
     KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
     KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
@@ -340,6 +340,15 @@
         </div>
 
         
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python%E5%A4%A7%E4%BD%9C%E4%B8%9A%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="nav-text">python大作业学习中的小知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#csv%E6%96%87%E4%BB%B6"><span class="nav-text">csv文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-text">简介</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#baseline"><span class="nav-text">baseline</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tokenizer"><span class="nav-text">tokenizer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tqdm"><span class="nav-text">tqdm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8Epytorch%E7%9A%84bert%E5%88%86%E7%B1%BB%E6%96%87%E6%9C%AC%E4%BB%A3%E7%A0%81"><span class="nav-text">基于pytorch的bert分类文本代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-%E5%BF%85%E8%A6%81%E7%9A%84%E5%87%86%E5%A4%87%EF%BC%8C%E5%8C%85%E6%8B%AC%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%90%84%E7%A7%8D%E5%BA%93%E7%9A%84%E4%B8%8B%E8%BD%BD"><span class="nav-text">0.必要的准备，包括模型的下载和各种库的下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%AF%B9%E4%B8%AD%E6%96%87%E6%95%B0%E6%8D%AE%E9%9B%86%E8%BF%9B%E8%A1%8C%E9%A2%84%E5%A4%84%E7%90%86"><span class="nav-text">1.对中文数据集进行预处理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1%E5%8E%BB%E9%99%A4%E6%95%B0%E6%8D%AE%E4%B8%AD%E7%9A%84%E9%9D%9E%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9"><span class="nav-text">1.1去除数据中的非文本内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2%E5%88%86%E8%AF%8D"><span class="nav-text">1.2分词</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3%E5%8E%BB%E6%8E%89%E5%81%9C%E7%94%A8%E8%AF%8D"><span class="nav-text">1.3去掉停用词</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4%E7%89%B9%E5%BE%81%E5%A4%84%E7%90%86"><span class="nav-text">1.4特征处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5%E5%88%A9%E7%94%A8%E5%85%B6%E6%80%9D%E8%80%83%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E5%88%86%E6%9E%90%E6%A8%A1%E5%9E%8B"><span class="nav-text">1.5利用其思考如何建立分析模型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%88%87%E5%88%86%E8%AE%AD%E7%BB%83%E9%9B%86%E3%80%81%E9%AA%8C%E8%AF%81%E9%9B%86%E5%92%8C%E6%B5%8B%E8%AF%95%E9%9B%86"><span class="nav-text">2.切分训练集、验证集和测试集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%8A%A0%E8%BD%BD%E5%88%B0pytorch%E7%9A%84DataLoader"><span class="nav-text">3.加载到pytorch的DataLoader</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%AE%9A%E4%B9%89bert%E6%A8%A1%E5%9E%8B"><span class="nav-text">4.定义bert模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E5%AE%9E%E4%BE%8B%E5%8C%96%E6%A8%A1%E5%9E%8B"><span class="nav-text">5.实例化模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E5%AE%9A%E4%B9%89%E4%BC%98%E5%8C%96%E5%99%A8"><span class="nav-text">6.定义优化器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E5%AE%9A%E4%B9%89%E8%AE%AD%E7%BB%83%E5%87%BD%E6%95%B0%E5%92%8C%E9%AA%8C%E8%AF%81%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0"><span class="nav-text">7.定义训练函数和验证测试函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-%E5%BC%80%E5%A7%8B%E8%AE%AD%E7%BB%83%E5%92%8C%E9%AA%8C%E8%AF%81%E6%A8%A1%E5%9E%8B"><span class="nav-text">8.开始训练和验证模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-%E5%8A%A0%E8%BD%BD%E6%9C%80%E4%BC%98%E6%A8%A1%E5%9E%8B%E5%AF%B9%E6%B5%8B%E8%AF%95%E9%9B%86%E8%BF%9B%E8%A1%8C%E6%B5%8B%E8%AF%95"><span class="nav-text">9.加载最优模型对测试集进行测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-text">总结</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
     </div>
 </div>
 
@@ -395,6 +404,10 @@
     <ul class="tools-list border-box">
         <!-- PC TOC show toggle -->
         
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
 
         <!-- PC go comment -->
         
@@ -430,6 +443,10 @@
 
     <ul class="exposed-tools-list border-box">
         
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
 
         
 
@@ -456,6 +473,17 @@
     
 
     <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python%E5%A4%A7%E4%BD%9C%E4%B8%9A%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="nav-text">python大作业学习中的小知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#csv%E6%96%87%E4%BB%B6"><span class="nav-text">csv文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-text">简介</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#baseline"><span class="nav-text">baseline</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tokenizer"><span class="nav-text">tokenizer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tqdm"><span class="nav-text">tqdm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8Epytorch%E7%9A%84bert%E5%88%86%E7%B1%BB%E6%96%87%E6%9C%AC%E4%BB%A3%E7%A0%81"><span class="nav-text">基于pytorch的bert分类文本代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-%E5%BF%85%E8%A6%81%E7%9A%84%E5%87%86%E5%A4%87%EF%BC%8C%E5%8C%85%E6%8B%AC%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%90%84%E7%A7%8D%E5%BA%93%E7%9A%84%E4%B8%8B%E8%BD%BD"><span class="nav-text">0.必要的准备，包括模型的下载和各种库的下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%AF%B9%E4%B8%AD%E6%96%87%E6%95%B0%E6%8D%AE%E9%9B%86%E8%BF%9B%E8%A1%8C%E9%A2%84%E5%A4%84%E7%90%86"><span class="nav-text">1.对中文数据集进行预处理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1%E5%8E%BB%E9%99%A4%E6%95%B0%E6%8D%AE%E4%B8%AD%E7%9A%84%E9%9D%9E%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9"><span class="nav-text">1.1去除数据中的非文本内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2%E5%88%86%E8%AF%8D"><span class="nav-text">1.2分词</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3%E5%8E%BB%E6%8E%89%E5%81%9C%E7%94%A8%E8%AF%8D"><span class="nav-text">1.3去掉停用词</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4%E7%89%B9%E5%BE%81%E5%A4%84%E7%90%86"><span class="nav-text">1.4特征处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5%E5%88%A9%E7%94%A8%E5%85%B6%E6%80%9D%E8%80%83%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E5%88%86%E6%9E%90%E6%A8%A1%E5%9E%8B"><span class="nav-text">1.5利用其思考如何建立分析模型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%88%87%E5%88%86%E8%AE%AD%E7%BB%83%E9%9B%86%E3%80%81%E9%AA%8C%E8%AF%81%E9%9B%86%E5%92%8C%E6%B5%8B%E8%AF%95%E9%9B%86"><span class="nav-text">2.切分训练集、验证集和测试集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%8A%A0%E8%BD%BD%E5%88%B0pytorch%E7%9A%84DataLoader"><span class="nav-text">3.加载到pytorch的DataLoader</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%AE%9A%E4%B9%89bert%E6%A8%A1%E5%9E%8B"><span class="nav-text">4.定义bert模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E5%AE%9E%E4%BE%8B%E5%8C%96%E6%A8%A1%E5%9E%8B"><span class="nav-text">5.实例化模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E5%AE%9A%E4%B9%89%E4%BC%98%E5%8C%96%E5%99%A8"><span class="nav-text">6.定义优化器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E5%AE%9A%E4%B9%89%E8%AE%AD%E7%BB%83%E5%87%BD%E6%95%B0%E5%92%8C%E9%AA%8C%E8%AF%81%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0"><span class="nav-text">7.定义训练函数和验证测试函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-%E5%BC%80%E5%A7%8B%E8%AE%AD%E7%BB%83%E5%92%8C%E9%AA%8C%E8%AF%81%E6%A8%A1%E5%9E%8B"><span class="nav-text">8.开始训练和验证模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-%E5%8A%A0%E8%BD%BD%E6%9C%80%E4%BC%98%E6%A8%A1%E5%9E%8B%E5%AF%B9%E6%B5%8B%E8%AF%95%E9%9B%86%E8%BF%9B%E8%A1%8C%E6%B5%8B%E8%AF%95"><span class="nav-text">9.加载最优模型对测试集进行测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-text">总结</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
     
 </main>
 
@@ -493,6 +521,10 @@
 
 
         <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
         
 
         <!-- copyright-info -->
